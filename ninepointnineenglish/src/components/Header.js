@@ -4,7 +4,9 @@ import "./Header.css";
 const Header = () => {
   return (
     <header>
-      <div className="logo">NinePointNine English</div>
+      <div className="logo">
+        <img src="/images/tl_eikaiwa.gif" alt="NinePointNine English Logo" />
+      </div>
       <nav>
         <ul>
           <li><a href="#instructors">Instructors</a></li>
