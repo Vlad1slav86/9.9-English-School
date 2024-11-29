@@ -1,39 +1,76 @@
+/* Instructors section styling */
 #instructors {
-    text-align: center;
-    padding: 40px;
-    background-color: #f9f9f9;
-  }
-  
-  .instructors-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .instructor-card {
-    width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .instructor-image {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-  }
-  
-  .instructor-name {
-    font-size: 20px;
-    margin: 10px 0;
-  }
-  
-  .instructor-bio {
-    font-size: 14px;
-    color: #666;
-  }
-  
+  padding: 20px;
+  background-color: #f4f4f4; /* Background color for the section */
+}
+
+.instructors-container {
+  display: flex;
+  flex-direction: column; /* Stack the instructor cards vertically */
+  gap: 20px; /* Add spacing between cards */
+}
+
+.instructor-card {
+  background-color: #b8eeef; /* White background for the card */
+  border-radius: 8px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+  display: flex; /* Display images and bio side by side */
+  padding: 20px;
+  align-items: left;
+  flex-direction: column; /* Stack content vertically */
+  text-align: left; /* Center text within the card */
+}
+
+.instructor-info {
+  display: flex; /* Align the image and bio side by side */
+  gap: 20px; /* Space between the image and the bio */
+}
+
+.instructor-main-image {
+  width: 330px; /* Set the main image width */
+  height: 330px; /* Set the main image height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 80px; /* Rounded corners for the image */
+}
+
+.bio {
+  flex: 1; /* Allow the bio section to take up remaining space */
+}
+
+.bio-text {
+  margin-top: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.small-images {
+  display: flex;
+  justify-content: left; /* Center images horizontally inside the card */
+  gap: 15px; /* Consistent spacing between images */
+  width: 100%;  /* Make sure small images fill the card width */
+  margin-top: 10px;
+  padding: 10px;  /* Added some padding to ensure images have space to grow */
+  flex-wrap: wrap;  /* Allow images to wrap on smaller screens */
+}
+
+.instructor-small-image {
+  width: 150px;  /* Set the width for all small images for consistency */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 40px;
+  transition: transform 0.4s ease-in-out;  /* Smooth transition effect */
+  image-rendering: auto;  /* Prevents the image from becoming blurry when scaled */
+}
+
+.instructor-small-image:hover {
+  transform: scale(2);  /* Double the size of the image */
+  z-index: 1;  /* Ensure the hovered image appears above other content */
+  cursor: pointer;  /* Change cursor to indicate interactivity */
+  image-rendering: auto;  /* Ensure high quality scaling */
+}
+
+
+

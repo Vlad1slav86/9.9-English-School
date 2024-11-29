@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './components/Header';
-import Navbar from './components/Navbar';  // Make sure this path is correct
+import Navbar from './components/Navbar'; 
 import About from './components/About';
 import Map from './components/Map';
 import Booking from './components/Booking';
@@ -13,11 +13,14 @@ const App = () => {
   return (
     <Router>
       <Header />
-      
-      <Navbar />  {/* Add the Navbar here */}
+      <Navbar />  
 
-     
       <Routes>
+        <Route path="/" element={
+          <div className="main">
+            {/* <h1>Welcome to Nine Point Nine English!</h1> */}
+          </div>
+        } />
         <Route path="/about" element={<About />} />
         <Route path="/instructors" element={<Instructors />} />
         <Route path="/map" element={<Map />} />
@@ -25,9 +28,6 @@ const App = () => {
         <Route path="/calendar" element={<CalendarSection />} />
       </Routes>
 
-      <div className="main">
-        
-        </div>
     </Router>
   );
 };
