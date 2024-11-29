@@ -1,8 +1,15 @@
 .main {
-  height: 100vh;
+  height: 80vh; /* Adjust height as needed */
+  width: 80%; /* Narrower horizontally */
+  margin: 0 auto; /* Center the container */
+  padding: 100px; /* Add padding around the image */
   background-image: url('/public/images/web_top_2022_11.gif');
-  background-size: cover;
+  background-size: contain; /* Fit the full image inside */
+  background-repeat: no-repeat;
   background-position: center;
+  background-color: #8de3ee; /* Background color around the image */
+  border-radius: 10px; /* Optional rounded edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
   display: flex;
   justify-content: center;
   align-items: center;

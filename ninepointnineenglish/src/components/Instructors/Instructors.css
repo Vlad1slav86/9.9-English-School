@@ -1,0 +1,39 @@
+#instructors {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .instructors-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .instructor-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .instructor-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .instructor-name {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .instructor-bio {
+    font-size: 14px;
+    color: #666;
+  }
+  
