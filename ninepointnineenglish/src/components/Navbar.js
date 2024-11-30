@@ -28,6 +28,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link to="/announcements">
+            <strong>お知らせ</strong>
+            <br />
+            <span>Announcements</span>
+          </Link>
+        </li>
+        <li>
           <Link to="/contact">
             <strong>お問い合わせ</strong>
             <br />

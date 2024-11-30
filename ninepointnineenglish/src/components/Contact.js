@@ -15,6 +15,19 @@ const Contact = () => {
             <p><strong>Futabacho School:</strong> 4-11 Futabacho 1-Chome Yamagata-shi, Yamagata 990-0828 Japan</p>
           </div>
 
+          <div className="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.13173465625!2d140.33261904091844!3d38.253250649334504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8bb6036d0fbf5d%3A0x81d5d77f1225c035!2s1-ch%C5%8Dme-3%20Nanukamachi%2C%20Yamagata%2C%20990-0042%2C%20Japan!5e0!3m2!1sen!2sus!4v1732986755974!5m2!1sen!2sus" 
+          width="900" 
+          height="450" 
+          style={{ border: 0 }} 
+          allowFullScreen="" 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade">
+        </iframe>
+          </div>
+
+
           <div className="contact-details">
             <h3>お問い合わせ</h3>
             <p>📞 <strong><a href="tel:0236252299">023-625-2299</a></strong></p>
@@ -36,18 +49,7 @@ const Contact = () => {
             <p>Closed Monday, Sunday, and National Holidays</p>
           </div>
           
-          <div className="map-container">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.13173465625!2d140.33261904091844!3d38.253250649334504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8bb6036d0fbf5d%3A0x81d5d77f1225c035!2s1-ch%C5%8Dme-3%20Nanukamachi%2C%20Yamagata%2C%20990-0042%2C%20Japan!5e0!3m2!1sen!2sus!4v1732986755974!5m2!1sen!2sus" 
-          width="900" 
-          height="450" 
-          style={{ border: 0 }} 
-          allowFullScreen="" 
-          loading="lazy" 
-          referrerPolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-
+         
 
 
 

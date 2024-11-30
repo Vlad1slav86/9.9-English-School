@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import Navbar from './components/Navbar'; 
 import About from './components/About';
-import Map from './components/Map';
-import Booking from './components/Booking';
+import Announcements from './components/Announcements';
+
 import CalendarSection from './components/CalendarSection';
 import Instructors from './components/Instructors/Instructors.js';
 import Contact from './components/Contact.js';
@@ -25,8 +25,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/instructors" element={<Instructors />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/map" element={<Map />} />
-        <Route path="/booking" element={<Booking />} />
+        <Route path="/announcements" element={<Announcements />} />
+        
         <Route path="/calendar" element={<CalendarSection />} />
       </Routes>
 

@@ -24,8 +24,6 @@ const Instructors = () => {
         "/images/Paul_IMG_1539.jpg",
         "/images/sPaul_DSC02397.jpg",
       ],
-
-      
     },
     {
       name: (
@@ -69,6 +67,22 @@ const Instructors = () => {
         "/images/Justin_yuma_kimika_satsuki.jpg",
       ],
     },
+    {
+      name: (
+        <>
+          <strong>武田千夏</strong>
+          <p>Takeda, Chinatsu</p>
+        </>
+      ),
+      mainImage: "/images/chinatsu3.jpg",
+      bio: (
+        <>
+          <strong>ディレクター／英検対策クラス担当講師</strong>
+          <p>Director／She is teaching at Nanokamachi.</p>
+        </>
+      ),
+      smallImages: [] // You can leave this empty or add small images later
+    }
   ];
 
   return (
@@ -88,16 +102,18 @@ const Instructors = () => {
                 <div className="bio-text">
                   {instructor.bio}
                 </div>
-                <div className="small-images">
-                  {instructor.smallImages.map((smallImage, idx) => (
-                    <img
-                      key={idx}
-                      src={smallImage}
-                      alt={`Small Image ${idx + 1}`}
-                      className="instructor-small-image"
-                    />
-                  ))}
-                </div>
+                {instructor.smallImages && instructor.smallImages.length > 0 && (
+                  <div className="small-images">
+                    {instructor.smallImages.map((smallImage, idx) => (
+                      <img
+                        key={idx}
+                        src={smallImage}
+                        alt={`Small Image ${idx + 1}`}
+                        className="instructor-small-image"
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>
