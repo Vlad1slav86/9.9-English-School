@@ -7,7 +7,7 @@
   background-size: contain; /* Fit the full image inside */
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #8de3ee; /* Background color around the image */
+  background-color: #b8eeef; /* Background color around the image */
   border-radius: 10px; /* Optional rounded edges */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
   display: flex;

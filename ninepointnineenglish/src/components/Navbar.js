@@ -1,16 +1,39 @@
-// src/components/Navbar.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // For React Router navigation
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   return (
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/instructors">Instructors</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <li>
+          <Link to="/">
+            <strong>ホーム</strong>
+            <br />
+            <span>Home</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/about">
+            <strong>アバウト</strong>
+            <br />
+            <span>About</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/instructors">
+            <strong>講師紹介</strong>
+            <br />
+            <span>Instructors</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact">
+            <strong>お問い合わせ</strong>
+            <br />
+            <span>Contact</span>
+          </Link>
+        </li>
       </ul>
     </nav>
   );

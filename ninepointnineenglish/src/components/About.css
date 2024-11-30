@@ -1,63 +1,69 @@
 #about {
-    background-color: #f9f9f9;
-    padding: 40px;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
+  padding: 20px;
+  background-color: #0872a8; /* Match background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Similar shadow */
+  /* max-width: 900px;
+  margin: 20px auto; */
+}
+
+.about-item {
+  background-color: #b8eeef; /* Match card background color */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 20px auto; /* Center the card horizontally */
+  max-width: 800px; /* Set a maximum width for the card */
+  width: 90%; /* Allow the card to shrink on smaller screens */
+}
+
+
+#about h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: white; /* Match heading color */
+  margin-bottom: 20px;
+}
+
+.about-item h3 {
+  font-size: 1.8rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.about-item p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.fee-list,
+.university-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.fee-list li,
+.university-list li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.fee-list li {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
   #about h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 2rem;
   }
-  
-  .about-item {
-    margin-bottom: 30px;
-  }
-  
+
   .about-item h3 {
-    font-size: 1.8rem;
-    color: #3498db;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
   }
-  
+
   .about-item p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
+    font-size: 1rem;
   }
-  
-  .fee-list,
-  .university-list {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .fee-list li,
-  .university-list li {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 8px;
-  }
-  
-  .fee-list li {
-    margin-left: 20px;
-  }
-  
-  @media (max-width: 768px) {
-    #about h2 {
-      font-size: 2rem;
-    }
-  
-    .about-item h3 {
-      font-size: 1.5rem;
-    }
-  
-    .about-item p {
-      font-size: 1rem;
-    }
-  }
-  
+}

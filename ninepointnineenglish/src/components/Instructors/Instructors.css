@@ -1,7 +1,7 @@
 /* Instructors section styling */
 #instructors {
   padding: 20px;
-  background-color: #f4f4f4; /* Background color for the section */
+  background-color: #0872a8; /* Background color for the section */
 }
 
 .instructors-container {
@@ -39,6 +39,13 @@
 
 .bio-text {
   margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 20px;
 }
 
 h3 {

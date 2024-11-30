@@ -1,29 +1,57 @@
-/* src/components/Navbar.css */
-nav {
-    background-color: #333;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-  }
-  
-  nav a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-  }
-  
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #b8eeef;
+  padding: 20px 0;
+  margin: 0;
+}
+
+nav li {
+  text-align: center;
+}
+
+nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #171616;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #3a8e8c;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100px; /* Fixed width for consistent card size */
+  height: 25px; /* Fixed height for consistent card size */
+}
+
+nav a:hover {
+  color: #ffd900;
+  background-color: #0872a8;
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav strong {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav span {
+  font-size: 0.8rem;
+  display: block;
+  color: #d6d6d6;
+  transition: color 0.3s;
+}
+
+nav a:hover span {
+  color: #ffd700;
+}
+
+/* Ensure text is vertically centered in the cards */
+nav a {
+  text-align: center;
+}
