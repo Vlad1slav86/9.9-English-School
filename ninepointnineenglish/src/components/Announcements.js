@@ -1,4 +1,5 @@
 import React from 'react';
+import CalendarSection from './CalendarSection'; // Import the calendar component
 import './Announcements.css';
 
 const Announcements = () => {
@@ -31,6 +32,11 @@ const Announcements = () => {
             <p>{announcement.description}</p>
           </div>
         ))}
+      </div>
+      {/* Add the Calendar Section below the announcements */}
+      <div className="calendar-section">
+        {/* <h3>Upcoming Events</h3> */}
+        <CalendarSection />
       </div>
     </section>
   );

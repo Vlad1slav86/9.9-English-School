@@ -1,0 +1,59 @@
+.calendar-container {
+    background-color: #b8eeef; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-top: 20px;
+  }
+  
+  .calendar-header {
+    text-align: center;
+    font-size: 1.8rem;
+    color: black; /* Dark text */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .rbc-calendar {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Card-like appearance */
+  }
+  
+  .rbc-event {
+    background-color: #0872a8 !important; /* Event color */
+    color: white !important;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .rbc-toolbar {
+    background-color: #0872a8;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .rbc-toolbar button {
+    background-color: white;
+    color: #0872a8;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .rbc-toolbar button:hover {
+    background-color: #005f87;
+    color: white;
+  }
+  
+  .rbc-today {
+    background-color: #f7f7f7 !important; /* Highlight today */
+    border: 1px solid #ccc !important;
+  }
+  
+  

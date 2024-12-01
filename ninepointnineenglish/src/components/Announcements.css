@@ -11,6 +11,12 @@
     margin-bottom: 20px;
   }
   
+  #announcements h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: black;
+}
+
   .announcement-container {
     display: flex;
     flex-direction: column;
@@ -55,4 +61,12 @@
       font-size: 1rem;
     }
   }
-  
+/*   
+  .calendar-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #b8eeef;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+   */
