@@ -1,0 +1,27 @@
+/* General footer styling */
+footer {
+    background-color: #0872a8; /* Footer background color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Space inside the footer */
+    position: relative; /* Allow scrolling to push footer into view */
+    width: 100%; /* Full-width footer */
+  }
+  
+  /* Sticky footer behavior */
+  html, body {
+    margin: 0; 
+    padding: 0;
+    height: 100%; /* Ensure body fills the viewport */
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make the root container take up the full height */
+  }
+  
+  main {
+    flex: 1; /* Allow the main content to grow and push the footer down */
+  }
+  

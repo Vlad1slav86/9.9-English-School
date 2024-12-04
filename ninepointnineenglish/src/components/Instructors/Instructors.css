@@ -30,7 +30,7 @@
   width: 330px; /* Set the main image width */
   height: 330px; /* Set the main image height */
   object-fit: cover; /* Ensure the image covers the area without distortion */
-  border-radius: 80px; /* Rounded corners for the image */
+  border-radius: 8px; /* Rounded corners for the image */
 }
 
 .bio {
@@ -67,7 +67,7 @@ h3 {
   width: 150px;  /* Set the width for all small images for consistency */
   height: 100px;
   object-fit: cover;
-  border-radius: 40px;
+  border-radius: 8px;
   transition: transform 0.4s ease-in-out;  /* Smooth transition effect */
   image-rendering: auto;  /* Prevents the image from becoming blurry when scaled */
 }

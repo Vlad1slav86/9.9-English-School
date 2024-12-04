@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Navbar from './components/Navbar'; 
 import About from './components/About';
 import Announcements from './components/Announcements';
-
+import Footer from './components/Footer';
 import CalendarSection from './components/CalendarSection';
 import Instructors from './components/Instructors/Instructors.js';
 import Contact from './components/Contact.js';
@@ -18,9 +18,15 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={
-          <div className="main">
-            {/* <h1>Welcome to Nine Point Nine English!</h1> */}
-          </div>
+          <>
+          <div className="main"></div>
+          <div className="image-gallery">
+          <img src="/images/student_erika_haruto_osuke.jpg" alt="Erika" />
+          <img src="/images/student_reisuke.jpg" alt="Reisuke" />
+          <img src="/images/sutudent_aoi_DSC02296.jpg" alt="Aoi" />
+          <img src="/images/sutudent_hinata_DSC02012.jpg" alt="Hinata" />
+        </div>
+        </>
         } />
         <Route path="/about" element={<About />} />
         <Route path="/instructors" element={<Instructors />} />
@@ -29,7 +35,7 @@ const App = () => {
         
         <Route path="/calendar" element={<CalendarSection />} />
       </Routes>
-
+      <Footer />
     </Router>
   );
 };

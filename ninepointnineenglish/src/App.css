@@ -1,19 +1,41 @@
-
 .main {
   height: 80vh; /* Adjust height as needed */
-  width: 100%; /* Narrower horizontally */
-  margin: 0 auto; /* Center the container */
-  padding: 10px; /* Add padding around the image */
+  width: 100%; /* Full-width container */
+  margin: 0; /* Center the container */
+  padding: 10px; /* Add padding around the content */
   background-image: url('/public/images/web_top_2022_11.gif');
   background-size: contain; /* Fit the full image inside */
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #0872a8; /* Background color around the image */
+  background-color: #0872a8; /* Background color */
   border-radius: 0px; /* Optional rounded edges */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Stack the main image and smaller images vertically */
   align-items: center;
+  justify-content: flex-start; /* Align content to the top */
   color: white;
   font-size: 36px;
+}
+
+.image-gallery {
+  margin-top: 0px; /* Space between the main image and smaller images */
+  display: flex; /* Align smaller images horizontally */
+  justify-content: center; /* Center the images */
+  gap: 15px; /* Space between images */
+  background-color: #b8eeef;
+}
+
+.image-gallery img {
+  width: 300px; /* Set a fixed width for smaller images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for style */
+  cursor: pointer; /* Add pointer cursor for interactivity */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  margin: 30px;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
 }

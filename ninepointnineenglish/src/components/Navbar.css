@@ -1,10 +1,11 @@
 nav ul {
-  display: flex;
-  justify-content: space-around;
+  display: flex; /* Arrange list items in a row */
+  gap: 5px; /* Add 5px gap between items */
   list-style: none;
   background-color: #b8eeef;
   padding: 20px 0;
   margin: 0;
+  justify-content: center; /* Center the links horizontally */
 }
 
 nav li {
@@ -17,19 +18,22 @@ nav a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #171616;
+  color: #d6d6d6;
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 10px;
   background-color: #0872a8;
-  border-radius: 10px;
+  border-radius: 8px;
   transition: 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100px; /* Fixed width for consistent card size */
-  height: 25px; /* Fixed height for consistent card size */
+  text-align: center;
+
+  /* Fixed size for all cards */
+  width: 120px; /* Set a consistent width */
+  height: 50px; /* Set a consistent height */
 }
 
 nav a:hover {
-  color: #ffd900;
+  color: yellow;
   background-color: #0872a8;
   text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
@@ -38,6 +42,7 @@ nav a:hover {
 nav strong {
   font-size: 1rem;
   font-weight: bold;
+  color: #d6d6d6;
 }
 
 nav span {
@@ -49,9 +54,4 @@ nav span {
 
 nav a:hover span {
   color: #ffd700;
-}
-
-/* Ensure text is vertically centered in the cards */
-nav a {
-  text-align: center;
 }

@@ -1,7 +1,6 @@
 #announcements {
     padding: 40px;
     background-color: #0872a8;
-    
   }
   
   #announcements h2 {
@@ -15,12 +14,15 @@
     margin-top: 20px;
     font-size: 1.5rem;
     color: black;
-}
-
+  }
+  
   .announcement-container {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center the cards horizontally */
     gap: 20px;
+    max-width: 1000px; /* Set a max width to prevent cards from stretching too wide */
+    margin: 0 auto; /* Center the container within the parent */
   }
   
   .announcement-card {
@@ -28,6 +30,8 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Make cards take up 100% of their parent container */
+    max-width: 800px; /* Max width for each card to prevent stretching */
   }
   
   .announcement-card h3 {
@@ -61,12 +65,4 @@
       font-size: 1rem;
     }
   }
-/*   
-  .calendar-section {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #b8eeef;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-   */
+  
