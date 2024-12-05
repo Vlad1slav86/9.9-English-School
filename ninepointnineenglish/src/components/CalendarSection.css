@@ -1,10 +1,10 @@
 /* Combined .calendar-section styles */
 .calendar-section {
-    padding: 20px;
-    background-color: #b8eeef; /* Card background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Card shadow */
-    max-width: 800px; /* Limit the width */
+    padding: 1px;
+    background-color: #b8eeef; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 840px; /* Limit the width */
     margin: 0 auto; /* Center it horizontally */
     margin-top: 20px;
   }

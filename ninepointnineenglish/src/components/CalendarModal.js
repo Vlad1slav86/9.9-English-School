@@ -1,31 +1,89 @@
-import React, { useState } from "react";
-import './CalendarModal.css';
+import React, { useState } from 'react';
+import './PasswordModal.css'; // Reusing modal styles for consistency
 
-const CalendarModal = ({ isOpen, onClose, onEventCreate, selectedSlot }) => {
-  const [eventTitle, setEventTitle] = useState('');
+const CalendarModal = ({
+  isOpen,
+  onClose,
+  onEventCreate,
+  onEventUpdate,
+  onEventDelete,
+  actionType,
+  selectedEvent,
+  selectedSlot,
+}) => {
+  const [title, setTitle] = useState(selectedEvent?.title || '');
 
-  if (!isOpen) return null;
+  // Reset the modal state when opened/closed
+  React.useEffect(() => {
+    if (isOpen) {
+      setTitle(selectedEvent?.title || '');
+    }
+  }, [isOpen, selectedEvent]);
 
-  const handleSubmit = () => {
-    onEventCreate(eventTitle);
+  const handleCreate = () => {
+    if (title.trim() !== '') {
+      onEventCreate(title);
+    } else {
+      alert('Please enter a valid title.');
+    }
   };
 
+  const handleUpdate = () => {
+    if (title.trim() !== '') {
+      const updatedEvent = { ...selectedEvent, title };
+      onEventUpdate(updatedEvent);
+    } else {
+      alert('Please enter a valid title.');
+    }
+  };
+
+  const handleDelete = () => {
+    
+      onEventDelete(selectedEvent);
+    
+  };
+
+  if (!isOpen) {
+    return null;
+  }
+
   return (
-    <div className="calendar-modal-overlay">
-      <div className="calendar-modal-content">
-        <h2>Add Event</h2>
-        <input 
-          type="text" 
-          placeholder="Event title"
-          value={eventTitle}
-          onChange={(e) => setEventTitle(e.target.value)} 
-        />
-        {/* <div>
-          <p>Start: {selectedSlot ? selectedSlot.start.toString() : ''}</p>
-          <p>End: {selectedSlot ? selectedSlot.end.toString() : ''}</p>
-        </div> */}
-        <button onClick={onClose}>Cancel</button>
-        <button onClick={handleSubmit}>Add Event</button>
+    <div className="modal-overlay">
+      <div className="modal-content">
+        <h2>{actionType === 'create' ? 'Add Event' : 'Edit Event'}</h2>
+
+        {actionType === 'create' && (
+          <div>
+            <input
+              type="text"
+              placeholder="Event Title"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+            <button onClick={handleCreate}>Add Event</button>
+          </div>
+        )}
+
+        {actionType === 'update' && (
+          <div>
+            <input
+              type="text"
+              placeholder="Event Title"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+            <div>
+              <button onClick={handleUpdate}>Update Event</button>
+              <button onClick={handleDelete} style={{ backgroundColor: 'red' }}>
+                Delete Event
+              </button>
+            </div>
+          </div>
+        )}
+
+        <button onClick={onClose} style={{ backgroundColor: '#ccc' }}>
+          Close
+        </button>
       </div>
     </div>
   );
