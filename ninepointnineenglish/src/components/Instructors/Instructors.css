@@ -1,9 +1,15 @@
 /* Instructors section styling */
 #instructors {
   padding: 20px;
-  background-color: #0872a8; /* Background color for the section */
+  background-color: #b8eeef; /* Background color for the section */
+}
+#instructors p {
+  color:#0872a8;
 }
 
+#instructors strong {
+  color:#0872a8;
+}
 .instructors-container {
   display: flex;
   flex-direction: column; /* Stack the instructor cards vertically */
@@ -11,7 +17,7 @@
 }
 
 .instructor-card {
-  background-color: #b8eeef; /* White background for the card */
+  background-color: white; /* White background for the card */
   border-radius: 8px; /* Rounded corners for the card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
   display: flex; /* Display images and bio side by side */
@@ -41,10 +47,10 @@
   margin-top: 10px;
 }
 
-h2 {
+#instructors h2 {
   text-align: center;
   font-size: 2rem;
-  color: black;
+  color: #0872a8;
   margin-bottom: 20px;
 }
 
@@ -79,5 +85,88 @@ h3 {
   image-rendering: auto;  /* Ensure high quality scaling */
 }
 
+.instructor-main-image {
+  width: 19%;
+  height: 330px; /* Adjust the height to fit your design */
+  background-size: cover;
+  background-position: center;
+}
 
+.instructor-small-image {
+  width: 100px; /* Adjust the size to fit your design */
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
 
+/* Instructor 1 - Paul */
+.instructor-main-image.paul {
+  background-image: url('/public/images/paul2013.jpg');
+}
+
+/* Instructor 1 - Small Images */
+.instructor-small-image.paul-small-1 {
+  background-image: url('/public/images/Paul_DSC02343.jpg');
+}
+
+.instructor-small-image.paul-small-2 {
+  background-image: url('/public/images/Paul_IMG_0962.jpg');
+}
+
+.instructor-small-image.paul-small-3 {
+  background-image: url('/public/images/Paul_IMG_1539.jpg');
+}
+
+.instructor-small-image.paul-small-4 {
+  background-image: url('/public/images/sPaul_DSC02397.jpg');
+}
+
+/* Instructor 2 - Lewis */
+.instructor-main-image.lewis {
+  background-image: url('/public/images/Lewis_Top_s.jpg');
+}
+
+/* Instructor 2 - Small Images */
+.instructor-small-image.lewis-small-1 {
+  background-image: url('/public/images/Lewis_1s.jpg');
+}
+
+.instructor-small-image.lewis-small-2 {
+  background-image: url('/public/images/Lewis_2s.jpg');
+}
+
+.instructor-small-image.lewis-small-3 {
+  background-image: url('/public/images/Lewis_3s.jpg');
+}
+
+.instructor-small-image.lewis-small-4 {
+  background-image: url('/public/images/Lewis_4s.jpg');
+}
+
+/* Instructor 3 - Justin */
+.instructor-main-image.justin {
+  background-image: url('/public/images/Justin_DSC02302.jpg');
+}
+
+/* Instructor 3 - Small Images */
+.instructor-small-image.justin-small-1 {
+  background-image: url('/public/images/Justin_Aoi_IMG_0844.jpg');
+}
+
+.instructor-small-image.justin-small-2 {
+  background-image: url('/public/images/Justin_erika71.jpg');
+}
+
+.instructor-small-image.justin-small-3 {
+  background-image: url('/public/images/Justin_mao_momoka.jpg');
+}
+
+.instructor-small-image.justin-small-4 {
+  background-image: url('/public/images/Justin_yuma_kimika_satsuki.jpg');
+}
+
+/* Instructor 4 - Chinatsu */
+.instructor-main-image.chinatsu {
+  background-image: url('/public/images/chinatsu3.jpg');
+}

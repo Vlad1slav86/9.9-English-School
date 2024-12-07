@@ -1,13 +1,12 @@
 import React from "react";
 import "./Header.css";
+import logoImage from "../images/tl_eikaiwa.gif"; 
 
 const Header = () => {
   return (
     <header>
-      <div className="logo">
-        <img src="/images/tl_eikaiwa.gif" alt="NinePointNine English Logo" />
-      </div>
-     <p>It's a bright choice!</p>
+      <div className="logo" style={{ backgroundImage: `url(${logoImage})` }}></div>
+      <p>It's a bright choice!</p>
     </header>
   );
 };

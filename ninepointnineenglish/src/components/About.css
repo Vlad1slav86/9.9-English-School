@@ -1,69 +1,73 @@
+/* General container */
 #about {
-  padding: 20px;
-  background-color: #0872a8; /* Match background color */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Similar shadow */
-  /* max-width: 900px;
-  margin: 20px auto; */
+  padding-top: 40px;
+  background-color: #b8eeef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
-.about-item {
-  background-color: #b8eeef; /* Match card background color */
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  margin: 20px auto; /* Center the card horizontally */
-  max-width: 800px; /* Set a maximum width for the card */
-  width: 90%; /* Allow the card to shrink on smaller screens */
-}
-
 
 #about h2 {
   text-align: center;
-  font-size: 2rem;
-  color: white; /* Match heading color */
   margin-bottom: 20px;
+  color:#0872a8;
 }
 
-.about-item h3 {
-  font-size: 1.8rem;
-  color: black;
+/* Flex container for items */
+.sets-apart-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+/* Base card styles */
+.about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding: 40px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  background: white;
+  overflow: hidden; /* Prevent text overflow */
+}
+
+.about-item:hover {
+  transform: scale(1.8);
+}
+
+/* Style for text inside the cards */
+.about-item .content h3,
+.about-item .content h4,
+.about-item .content p {
+  font-size:  16px; /* Adjust text size to fit */
+  margin: 0 5px; /* Manage margins dynamically */
   margin-bottom: 10px;
+  line-height: 1.2; /* Space text nicely */
+  overflow-wrap: break-word; /* Break long words */
+  word-break: break-word;
+  text-align: center;
+  color:#0872a8;
 }
 
-.about-item p {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-}
-
-.fee-list,
-.university-list {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.fee-list li,
-.university-list li {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 8px;
-}
-
-.fee-list li {
-  margin-left: 20px;
-}
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  #about h2 {
-    font-size: 2rem;
+  .about-item {
+    width: 180px;
+    height: 180px;
   }
 
-  .about-item h3 {
-    font-size: 1.5rem;
-  }
-
-  .about-item p {
-    font-size: 1rem;
+  .about-item .content h3,
+  .about-item .content h4,
+  .about-item .content p {
+    font-size: 0.7em; /* Dynamically scale down text on smaller devices */
   }
 }

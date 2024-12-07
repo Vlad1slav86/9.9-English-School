@@ -1,3 +1,4 @@
+/* Style the navbar list container */
 nav ul {
   display: flex; /* Arrange list items in a row */
   gap: 5px; /* Add 5px gap between items */
@@ -8,50 +9,47 @@ nav ul {
   justify-content: center; /* Center the links horizontally */
 }
 
+/* Style individual list items */
 nav li {
   text-align: center;
 }
 
+/* Style the links with just text and a border to the right */
 nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #d6d6d6;
+  color: #0872a8;
   font-family: Arial, sans-serif;
-  padding: 10px;
-  background-color: #0872a8;
-  border-radius: 8px;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-
-  /* Fixed size for all cards */
-  width: 120px; /* Set a consistent width */
-  height: 50px; /* Set a consistent height */
+  padding: 0px 40px; /* Add horizontal padding */
+  border-right: 2px solid #0872a8; /* Add a right-hand border */
+  transition: color 0.3s ease-in-out;
 }
 
+/* Hover effect */
 nav a:hover {
-  color: yellow;
-  background-color: #0872a8;
-  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  color: black; /* Change text color on hover */
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Optional glow effect */
+  border-right: 2px solid #ffd700; /* Change the hover border color */
 }
 
+/* Responsive text styles */
 nav strong {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  color: #d6d6d6;
+  color: #0872a8;
 }
 
 nav span {
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: block;
-  color: #d6d6d6;
+  color: #0872a8;
   transition: color 0.3s;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
-nav a:hover span {
+/* nav a:hover span {
   color: #ffd700;
-}
+} */
