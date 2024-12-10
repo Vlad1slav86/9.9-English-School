@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PasswordModal.css'; // Reusing modal styles for consistency
+import './CalendarModal.css'; // Reusing modal styles for consistency
 
 const CalendarModal = ({
   isOpen,
@@ -48,8 +48,8 @@ const CalendarModal = ({
   }
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
+    <div className="calendar-modal-overlay">
+      <div className="calendar-modal-content">
         <h2>{actionType === 'create' ? 'Add Event' : 'Edit Event'}</h2>
 
         {actionType === 'create' && (

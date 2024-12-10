@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import CalendarSection from './components/CalendarSection';
 import Instructors from './components/Instructors/Instructors.js';
 import Contact from './components/Contact.js';
+import Gallery from './components/Gallery.js';
 import './App.css';
 
 const App = () => {
@@ -17,34 +18,21 @@ const App = () => {
       <Navbar />
 
       <Routes>
+        {/* Home route with the image gallery */}
         <Route path="/" element={
           <>
             <div className="main"></div> {/* Main section with background */}
-            <div className="image-gallery-wrapper"> {/* Add the wrapper for scrolling */}
-              <div className="image-gallery">
-                <div className="image1"></div>
-                <div className="image2"></div>
-                <div className="image2"></div>
-                <div className="image2"></div>
-                <div className="image2"></div>
-                <div className="image2"></div>
-                <div className="image2"></div>
-                <div className="image2"></div>
-                <div className="image3"></div>
-                <div className="image3"></div>
-                <div className="image3"></div>
-                <div className="image3"></div>
-                <div className="image4"></div>
-              </div>
-            </div>
+            <Gallery /> {/* Use Gallery here */}
           </>
         } />
+        {/* Other Routes */}
         <Route path="/about" element={<About />} />
         <Route path="/instructors" element={<Instructors />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/announcements" element={<Announcements />} />
         <Route path="/calendar" element={<CalendarSection />} />
       </Routes>
+
       <Footer />
     </Router>
   );

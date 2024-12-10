@@ -14,8 +14,8 @@ const PasswordModal = ({ isOpen, onClose, onSubmit }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
+    <div className="password-modal-overlay">
+      <div className="password-modal-content">
         <h2>Password Required</h2>
         <input 
           type="password" 

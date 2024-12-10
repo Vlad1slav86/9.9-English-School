@@ -1,19 +1,20 @@
 #announcements {
     padding: 40px;
-    background-color: #0872a8;
+    background-color: #b8eeef;
   }
   
   #announcements h2 {
     text-align: center;
-    font-size: 2.5rem;
-    color: white;
-    margin-bottom: 20px;
+    font-size: 2.3rem;
+    color: #0872a8;
+    margin-bottom: 60px;
+    font-family: Arial black, Helvetica, sans-serif;
   }
   
   #announcements h3 {
     margin-top: 20px;
     font-size: 1.5rem;
-    color: black;
+    color: #0872a8;
   }
   
   .announcement-container {
@@ -26,7 +27,7 @@
   }
   
   .announcement-card {
-    background-color: #b8eeef;
+    background-color: white;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -52,6 +53,10 @@
     line-height: 1.6;
   }
   
+.calendar-container h2 {
+margin-bottom: 30px;
+}
+
   @media (max-width: 768px) {
     #announcements h2 {
       font-size: 2rem;

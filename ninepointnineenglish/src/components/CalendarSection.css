@@ -1,7 +1,7 @@
 /* Combined .calendar-section styles */
 .calendar-section {
     padding: 1px;
-    background-color: #b8eeef; 
+    background-color: white; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     max-width: 840px; /* Limit the width */
@@ -9,10 +9,10 @@
     margin-top: 20px;
   }
   
-  .calendar-header {
+  .calendar-header h2 {
     text-align: center;
     font-size: 1.8rem;
-    color: black; /* Dark text */
+    color: #0872a8; 
     font-weight: bold;
     margin-bottom: 20px;
   }

@@ -30,9 +30,9 @@ nav a {
 
 /* Hover effect */
 nav a:hover {
-  color: black; /* Change text color on hover */
+  color: white; /* Change text color on hover */
   text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Optional glow effect */
-  border-right: 2px solid #ffd700; /* Change the hover border color */
+  /* border-right: 2px solid #ffd700; Change the hover border color */
 }
 
 /* Responsive text styles */
@@ -40,14 +40,21 @@ nav strong {
   font-size: 1.2rem;
   font-weight: bold;
   color: #0872a8;
+  margin-bottom: -10px;
 }
+/* 
+nav strong:hover {
+  color: white;
+
+} */
 
 nav span {
   font-size: 1rem;
   display: block;
   color: #0872a8;
   transition: color 0.3s;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 65%;
 }
 
 /* nav a:hover span {

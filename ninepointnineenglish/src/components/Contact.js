@@ -11,8 +11,8 @@ const Contact = () => {
             <h3>学校所在地</h3>
             <p><strong>七日町校：</strong>山形市七日町2-1-3 プラザビル七日町3階</p>
             <p><strong>双葉町校：</strong>山形市双葉町1-4-11</p>
-            <p><strong>Nanokamachi School:</strong> 3/F Tosho Bldg. 1-3 Nanokamachi 2-Chome Yamagata-shi, Yamagata 990-0042 Japan</p>
-            <p><strong>Futabacho School:</strong> 4-11 Futabacho 1-Chome Yamagata-shi, Yamagata 990-0828 Japan</p>
+            {/* <p><strong>Nanokamachi School:</strong> 3/F Tosho Bldg. 1-3 Nanokamachi 2-Chome Yamagata-shi, Yamagata 990-0042 Japan</p>
+            <p><strong>Futabacho School:</strong> 4-11 Futabacho 1-Chome Yamagata-shi, Yamagata 990-0828 Japan</p> */}
           </div>
 
           <div className="map-container">
@@ -40,12 +40,12 @@ const Contact = () => {
           </div>
           <div className="business-hours">
             <h3>受付時間</h3>
-            <p>火曜～金曜: <strong>13時～20時</strong></p>
-            <p>土曜: <strong>～17時</strong></p>
+            <p>火曜～金曜: 13時～20時</p>
+            <p>土曜: ～17時</p>
             <p>月・日・祝日休み</p>
             <h3>Business Hours:</h3>
-            <p>Tuesday through Friday: <strong>1:00pm - 8:00pm</strong></p>
-            <p>Saturday: <strong>Until 5:00pm</strong></p>
+            <p>Tuesday through Friday: 1:00pm - 8:00pm</p>
+            <p>Saturday: Until 5:00pm</p>
             <p>Closed Monday, Sunday, and National Holidays</p>
           </div>
           

@@ -49,9 +49,10 @@
 
 #instructors h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #0872a8;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  font-family: Arial black, Helvetica, sans-serif;
 }
 
 h3 {

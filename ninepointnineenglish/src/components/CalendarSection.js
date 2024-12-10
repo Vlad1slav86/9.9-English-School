@@ -119,7 +119,7 @@ const CalendarSection = () => {
         selectedSlot={selectedSlot}
       />
 
-<h2 className="calendar-header" style={{ color: 'black' }}>School Calendar</h2>
+<h2>School Calendar</h2>
 
 
       <Calendar

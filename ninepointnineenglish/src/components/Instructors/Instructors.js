@@ -14,7 +14,7 @@ const Instructors = () => {
       mainImageClass: "instructor-main-image paul",  // Added 'paul' class
       bio: (
         <>
-          <strong>私どもの「子どもの英会話」は、第一に「楽しい」レッスンです。「楽しい」からこそお子さまの参加意欲と英語に対する関心を高く維持できるのです。第二言語の習得はその言語をプロセスできる神経回路の新たな構築を意味します。脳の発育が活発な時期にどんどん「英語の刺激」を与えてあげることが大切です。「楽しく過ごす英語だけの時間」。これが最も効果的な刺激の与え方なのです。</strong>
+          <strong>私どもの「子どもの英会話」は、第一に「楽しい」レッスンです。<br></br>「楽しい」からこそお子さまの参加意欲と英語に対する関心を高く維持できるのです。<br></br>第二言語の習得はその言語をプロセスできる神経回路の新たな構築を意味します。<br></br>脳の発育が活発な時期にどんどん「英語の刺激」を与えてあげることが大切です。<br></br>「楽しく過ごす英語だけの時間」。これが最も効果的な刺激の与え方なのです。</strong>
           <p>Paul has been teaching English in Yamagata since 1993, and started working with us in 1997. He is teaching at Futabacho.</p>
         </>
       ),
@@ -29,13 +29,14 @@ const Instructors = () => {
       name: (
         <>
           <strong>ルイス ハリソン</strong>
-          <p>Lewis Harrison</p>
+          <p>七日町校担当講師 <br></br>幼児から高校生クラスまでを担当。<br></br>クラスの雰囲気はとても穏やかで、シャイな生徒さんも安心してご参加いただけます。</p>
+          
         </>
       ),
       mainImageClass: "instructor-main-image lewis",  // Added 'lewis' class
       bio: (
         <>
-          <strong>七日町校担当講師 幼児から高校生クラスまでを担当。クラスの雰囲気はとても穏やかで、シャイな生徒さんも安心してご参加いただけます。</strong>
+          <strong>Lewis Harrison</strong>
           <p>Lewis is from the UK and he teaches at Nanokamachi.</p>
         </>
       ),
@@ -56,7 +57,7 @@ const Instructors = () => {
       mainImageClass: "instructor-main-image justin",  // Added 'justin' class
       bio: (
         <>
-          <strong>七日町校担当講師 幼児から帰国生クラスまで、生徒さんの関心を引き付け、楽しみながら身につくレッスンが好評です。</strong>
+          <strong>七日町校担当講師 <br></br>幼児から帰国生クラスまで、生徒さんの関心を引き付け、楽しみながら身につくレッスンが好評です。</strong>
           <p>Justin is from the U.S.A and he teaches at Nanokamachi.</p>
         </>
       ),

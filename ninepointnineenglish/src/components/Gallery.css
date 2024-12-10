@@ -1,0 +1,98 @@
+/* Gallery Styles */
+.image-gallery-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: relative;
+    overflow: visible;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.gallery-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: scrollGallery 60s linear infinite;
+}
+
+/* Removed hover enlarging effect */
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    max-width: 90%; /* Limit modal size to 90% of the screen */
+    max-height: 90%; /* Ensure it doesn't exceed the viewport height */
+    overflow: hidden; /* Prevent overflowing content */
+    border-radius: 10px; /* Optional: Rounded corners for the modal */
+    background: white;
+}
+
+/* Modal Image */
+.modal-image {
+    width: 100%; /* Ensure the image spans the full width of the modal */
+    max-width: 800px; /* Optional: Limit the width for very large screens */
+    height: 100%; /* Maintain the aspect ratio */
+    object-fit: cover; /* Stretch to fill the container without distortion */
+}
+
+/* Close Button */
+.gallery-close-button {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque on hover */
+}
+
+/* Keyframes for seamless scrolling */
+@keyframes scrollGallery {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Adjust as per your content */
+    }
+}
