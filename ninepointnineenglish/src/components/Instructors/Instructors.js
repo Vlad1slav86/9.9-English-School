@@ -28,13 +28,14 @@ const Instructors = () => {
       name: (
         <>
           <strong>ルイス ハリソン</strong>
-          <p>七日町校担当講師 <br></br>幼児から高校生クラスまでを担当。<br></br>クラスの雰囲気はとても穏やかで、シャイな生徒さんも安心してご参加いただけます。</p>
+
           
         </>
       ),
       mainImageClass: "instructor-main-image lewis",  // Added 'lewis' class
       bio: (
         <>
+                  <p>七日町校担当講師 <br></br>幼児から高校生クラスまでを担当。<br></br>クラスの雰囲気はとても穏やかで、シャイな生徒さんも安心してご参加いただけます。</p><br/>
           <strong>Lewis Harrison</strong>
           <p>Lewis is from the UK and he teaches at Nanokamachi.</p>
         </>

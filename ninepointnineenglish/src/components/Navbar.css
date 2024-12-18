@@ -7,11 +7,11 @@ nav ul {
   padding: 20px 0;
   margin: 0;
   justify-content: center; /* Center the links horizontally */
-  border-bottom: 2px solid #0872a8;
+  border-bottom: 1px solid #0872a8;
 }
 
 nav ul li i {
-  font-size: 2.5rem !important; /* Adjust size as needed */
+  font-size: 2rem !important; /* Adjust size as needed */
   margin-right: 8px; /* Add some space between the icon and the text */
   vertical-align: middle; /* Align icons with the text */
   color: #0872a8; /* Icon color */
@@ -37,7 +37,7 @@ nav a {
   color: #0872a8;
   font-family: Arial, sans-serif;
   padding: 0px 40px; /* Add horizontal padding */
-  border-right: 2px solid #0872a8; /* Add a right-hand border */
+  /* border-right: 1px solid #0872a8;  */
   transition: color 0.3s ease-in-out;
 }
 

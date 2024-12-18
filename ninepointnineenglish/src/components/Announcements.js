@@ -34,10 +34,25 @@ const Announcements = () => {
         ))}
       </div>
       {/* Add the Calendar Section below the announcements */}
-      <div className="calendar-section">
-        {/* <h3>Upcoming Events</h3> */}
+      {/* <div className="calendar-section">
         <CalendarSection />
-      </div>
+      </div> */}
+    
+    
+      <div className="map-container">
+            <iframe 
+              src="https://calendar.google.com/calendar/embed?src=59d85ae254cec09009955c24c9d4b09013bef6aa37aa0fe0bc22ccd2861db2f9%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+              width="840" 
+              height="450" 
+              style={{ border: 0 }} 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+    
+    
+    
     </section>
   );
 };

@@ -39,8 +39,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-        <Link to="/calendar"><i className="fa fa-calendar"></i> 
+        <Link to="/calendar">
+          <i className="fa fa-calendar"></i> 
         <strong>カレンダー</strong></Link> 
+        <br/>
+        {/* <span>Calendar</span> */}
         </li>
         <li>
           <Link to="/contact">
