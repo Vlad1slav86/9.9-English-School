@@ -38,4 +38,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+/**
+ * @license qrcode.react
+ * Copyright (c) Paul O'Shannessy
+ * SPDX-License-Identifier: ISC
+ */
+
 //! moment.js

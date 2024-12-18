@@ -1,9 +1,14 @@
 {
   "files": {
-    "main.css": "/9.9-English-School/static/css/main.194f665b.css",
-    "main.js": "/9.9-English-School/static/js/main.79f16c9d.js",
+    "main.css": "/9.9-English-School/static/css/main.c1f30f3f.css",
+    "main.js": "/9.9-English-School/static/js/main.3850cc1e.js",
     "static/js/453.f7b5317a.chunk.js": "/9.9-English-School/static/js/453.f7b5317a.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/9.9-English-School/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/web_top_2022_11.gif": "/9.9-English-School/static/media/web_top_2022_11.f4b66277283526f86fad.gif",
+    "static/media/fontawesome-webfont.eot": "/9.9-English-School/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/9.9-English-School/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/9.9-English-School/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/9.9-English-School/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/sPaul_DSC02397.jpg": "/9.9-English-School/static/media/sPaul_DSC02397.cad7961d6108c461c739.jpg",
     "static/media/Lewis_1s.jpg": "/9.9-English-School/static/media/Lewis_1s.f02e8ff327d2e6b96414.jpg",
     "static/media/Lewis_Top_s.jpg": "/9.9-English-School/static/media/Lewis_Top_s.c76dbd0bd2712f32c191.jpg",
@@ -25,12 +30,12 @@
     "static/media/student_reisuke.jpg": "/9.9-English-School/static/media/student_reisuke.39c15b80d11abd0cc4a6.jpg",
     "static/media/sutudent_aoi_DSC02296.jpg": "/9.9-English-School/static/media/sutudent_aoi_DSC02296.d06d6c98e384ba3c1c4d.jpg",
     "index.html": "/9.9-English-School/index.html",
-    "main.194f665b.css.map": "/9.9-English-School/static/css/main.194f665b.css.map",
-    "main.79f16c9d.js.map": "/9.9-English-School/static/js/main.79f16c9d.js.map",
+    "main.c1f30f3f.css.map": "/9.9-English-School/static/css/main.c1f30f3f.css.map",
+    "main.3850cc1e.js.map": "/9.9-English-School/static/js/main.3850cc1e.js.map",
     "453.f7b5317a.chunk.js.map": "/9.9-English-School/static/js/453.f7b5317a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.194f665b.css",
-    "static/js/main.79f16c9d.js"
+    "static/css/main.c1f30f3f.css",
+    "static/js/main.3850cc1e.js"
   ]
 }
