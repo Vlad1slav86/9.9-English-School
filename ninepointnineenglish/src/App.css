@@ -1,41 +1,40 @@
 /* Main Section */
 .main {
-  height: 90vh; /* Adjust height as needed */
+  height: 90vh; /* Keep the full height */
   width: 100%; /* Full-width container */
-  margin: 0; /* Center the container */
-  padding: 0px; /* Add padding around the content */
-  background-image: url('/public/images/web_top_2022_11.gif');
-  background-size: cover; /* Fit the full image inside */
+  margin: 0; /* No margin */
+  padding: 0; /* No extra padding */
+  background-image: url('/public/images/web_top_2022_11.gif'); /* Keep the background */
+  background-size: cover; /* Ensure full image coverage */
   background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
+  background-position: center; /* Center the background image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
   display: flex;
-  flex-direction: column; /* Stack the main image and smaller images vertically */
+  flex-direction: column; /* Stack content vertically */
   align-items: center;
   justify-content: flex-start; /* Align content to the top */
-  background-color: #b8eeef;
-  font-size: 36px;
+  background-color: #b8eeef; /* Backup color */
+  font-size: 36px; /* Default font size */
 }
-/* 
+
 /* Wrapper for Image Gallery with horizontal scrolling */
 .image-gallery-wrapper {
   width: 100%; /* Full width of the screen */
   overflow: hidden; /* Hide overflowing content */
-  margin-top: 20px; /* Add space between the large image and the gallery */
-  background-color: #f7f7f7; /* Optional: Background for the wrapper */
+  margin-top: 20px; /* Space between sections */
+  background-color: #f7f7f7; /* Keep the wrapper background */
   display: flex;
-  justify-content: start; /* Align content to the start */
-  align-items: center; /* Ensure images are vertically aligned */
-  padding: 10px 0; /* Optional: Add padding for better spacing */
+  justify-content: start; /* Align to the start */
+  align-items: center; /* Align images vertically */
+  padding: 10px 0; /* Padding for spacing */
 }
 
 /* Image Gallery Container */
 .image-gallery {
-  display: flex; /* Align smaller images horizontally */
-  flex-wrap: nowrap; /* Prevent wrapping */
+  display: flex; /* Horizontal alignment */
+  flex-wrap: nowrap; /* Prevent wrapping by default */
   gap: 20px; /* Space between images */
-  /* min-width: calc(300px * 12 + 20px * 11); Ensure gallery can contain all images + gap */
-  animation: scrollGallery 60s linear infinite; /* Animation for scrolling */
+  animation: scrollGallery 60s linear infinite; /* Scrolling animation */
 }
 
 /* Keyframes for automatic horizontal scrolling */
@@ -50,106 +49,63 @@
 
 /* General styling for image elements */
 .image-gallery img {
-  width: 300px; /* Fixed width for gallery images */
+  width: 300px; /* Fixed width */
   height: 200px; /* Fixed height */
-  border-radius: 8px;
+  border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease; /* Smooth transformation effect */
+  transition: transform 0.3s ease; /* Smooth hover effect */
 }
-
 
 .image-gallery img:hover {
-  transform: scale(1.5); /* Slightly enlarge on hover */
+  transform: scale(1.5); /* Enlarge on hover */
 }
+
 .image-gallery:hover {
   animation-play-state: paused; /* Pause animation on hover */
 }
-.image-gallery .image-duplicate {
-  display: flex; /* Duplicate container aligns in the same row */
-  gap: 20px; /* Space between duplicates */
-}
-
-
-
-/* Specific background images for divs */
-.image-gallery .image1,
-.image-gallery .image2,
-.image-gallery .image3,
-.image-gallery .image4,
-.image-gallery .image5,
-.image-gallery .image6,
-.image-gallery .image7,
-.image-gallery .image8,
-.image-gallery .image9,
-.image-gallery .image10,
-.image-gallery .image11,
-.image-gallery .image12 {
-  width: 300px; /* Set the width */
-  height: 200px; /* Set the height */
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Specific background images for each image div */
-.image-gallery .image1 {
-  background-image: url('/public/images/student_erika_haruto_osuke.jpg');
-}
-
-.image-gallery .image2 {
-  background-image: url('/public/images/student_reisuke.jpg');
-}
-
-.image-gallery .image3 {
-  background-image: url('/public/images/sutudent_aoi_DSC02296.jpg');
-}
-
-.image-gallery .image4 {
-  background-image: url('/public/images/sutudent_hinata_DSC02012.jpg');
-}
-
-.image-gallery .image5 {
-  background-image: url('/public/images/Justin_yuma_kimika_satsuki.jpg');
-}
-
-.image-gallery .image6 {
-  background-image: url('/public/images/Paul_IMG_1539.jpg');
-}
-
-.image-gallery .image7 {
-  background-image: url('/public/images/Justin_mao_momoka.jpg');
-}
-
-.image-gallery .image8 {
-  background-image: url('/public/images/Lewis_1s.jpg');
-}
-
-.image-gallery .image9 {
-  background-image: url('/public/images/Lewis_2s.jpg');
-}
-
-.image-gallery .image10 {
-  background-image: url('/public/images/Lewis_3s.jpg');
-}
-
-.image-gallery .image11 {
-  background-image: url('/public/images/Lewis_4s.jpg');
-}
-
-.image-gallery .image12 {
-  background-image: url('/public/images/Paul_IMG_0962.jpg');
-}
 
 /* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-  .image-gallery {
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 20px; /* Reduce spacing between items */
+/* Responsive Adjustments for iPhone and Small Screens */
+@media (max-width: 430px) {
+  .main {
+      height: 300px; /* Let content determine height */
+      padding: 0px; /* Add breathing space */
+      font-size: 24px; /* Adjust font size for readability */
   }
-}
 
-@media (max-width: 768px) {
+  .image-gallery-wrapper {
+      padding: 5px;
+      overflow: visible;
+  }
+
+  .image-gallery {
+      flex-wrap: wrap; /* Stack images vertically */
+      animation: none !important;
+      gap: 10px; /* Reduce gap between images */
+      justify-content: center;
+  }
+
+  .gallery-image {
+    animation: none;
+  }
+
   .image-gallery img {
-    width: 250px; /* Reduce image size on smaller screens */
+      width: 100%; /* Images take full container width */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  h1, h2 {
+      font-size: 1.5rem; /* Adjust heading size */
+      text-align: center; /* Center text */
+  }
+
+  .calendar-section {
+      padding: 10px; /* Reduce padding */
+      margin: 10px auto; /* Adjust margins */
+      max-width: 100%; /* Ensure calendar fits screen */
+  }
+
+  .rbc-calendar {
+      box-shadow: none; /* Simplify styles for smaller screens */
   }
 }
