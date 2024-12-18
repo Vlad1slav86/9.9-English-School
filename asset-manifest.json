@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/9.9-English-School/static/css/main.c1f30f3f.css",
+    "main.css": "/9.9-English-School/static/css/main.c2a15f1b.css",
     "main.js": "/9.9-English-School/static/js/main.3850cc1e.js",
     "static/js/453.f7b5317a.chunk.js": "/9.9-English-School/static/js/453.f7b5317a.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/9.9-English-School/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -26,16 +26,15 @@
     "static/media/student_erika_haruto_osuke.jpg": "/9.9-English-School/static/media/student_erika_haruto_osuke.d27f20b159878a1d7c34.jpg",
     "static/media/Paul_IMG_0962.jpg": "/9.9-English-School/static/media/Paul_IMG_0962.699c4eb461056949090b.jpg",
     "static/media/Paul_IMG_1539.jpg": "/9.9-English-School/static/media/Paul_IMG_1539.f1f806a02a50171e638f.jpg",
-    "static/media/sutudent_hinata_DSC02012.jpg": "/9.9-English-School/static/media/sutudent_hinata_DSC02012.de9b0c91a4c97f34c1a1.jpg",
     "static/media/student_reisuke.jpg": "/9.9-English-School/static/media/student_reisuke.39c15b80d11abd0cc4a6.jpg",
     "static/media/sutudent_aoi_DSC02296.jpg": "/9.9-English-School/static/media/sutudent_aoi_DSC02296.d06d6c98e384ba3c1c4d.jpg",
     "index.html": "/9.9-English-School/index.html",
-    "main.c1f30f3f.css.map": "/9.9-English-School/static/css/main.c1f30f3f.css.map",
+    "main.c2a15f1b.css.map": "/9.9-English-School/static/css/main.c2a15f1b.css.map",
     "main.3850cc1e.js.map": "/9.9-English-School/static/js/main.3850cc1e.js.map",
     "453.f7b5317a.chunk.js.map": "/9.9-English-School/static/js/453.f7b5317a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1f30f3f.css",
+    "static/css/main.c2a15f1b.css",
     "static/js/main.3850cc1e.js"
   ]
 }
