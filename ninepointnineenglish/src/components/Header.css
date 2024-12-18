@@ -3,7 +3,7 @@ header {
   display: flex;
   justify-content: space-between; /* Distribute space between elements */
   align-items: center; /* Align items vertically in the center */
-  padding: 20px;
+  padding: 6px;
   background-color: #f4f4f4;
   position: relative; /* Enable absolute positioning for inner elements if needed */
 }
@@ -21,7 +21,7 @@ header .logo {
 
 /* Header text styling */
 header p {
-  font-size: 2.3rem; 
+  font-size: 2.3rem; /* Equivalent to 32px, adjust as needed */
   font-weight: bold; /* Optional: make the text bolder */
   color: #0872a8;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

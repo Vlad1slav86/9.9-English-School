@@ -1,0 +1,28 @@
+.dropdown-toggle {
+    position: fixed;
+    bottom: 50px; /* Adjust this value to move it further down */
+    left: 50%;
+    transform: translateX(-50%); /* Center the arrow horizontally */
+    background: rgba(0, 0, 0, 0.5); /* Make it somewhat transparent */
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 9999; /* Ensure it's above other content */
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+  }
+  
+  .dropdown-icon {
+    width: 24px;
+    height: 24px;
+    fill: white; /* Color of the arrow */
+  }
+  
+  .dropdown-toggle:hover .dropdown-icon {
+    fill: #fff; /* Change color on hover */
+  }
+  
+  .dropdown-toggle:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darker when hovered */
+  }
+  

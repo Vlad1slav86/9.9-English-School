@@ -1,7 +1,7 @@
 #contact {
     padding: 20px;
     background-color: #b8eeef;
-    color: #333;
+    color: #005f87;
     line-height: 1.6;
   }
   
@@ -26,7 +26,7 @@
   h3 {
     margin-top: 20px;
     font-size: 1.5rem;
-    color: #555;
+    color: #0872a8;
   }
   
   p {
@@ -42,7 +42,7 @@
   }
   
   strong {
-    color: #000;
+    color: #0872a8;
   }
   
   .contact-details p, .business-hours p, .school-info p {
@@ -62,4 +62,27 @@
     border-radius: 8px; /* Optional rounded corners */
   }
   
-  
+.line-qr-code {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.line-qr-code h3 {
+    font-size: 1.5rem;
+    color: #0872a8;
+    margin-bottom: 10px;
+}
+
+.line-qr-code a {
+    color: #0872a8;
+    text-decoration: underline;
+}
+
+.line-qr-code a:hover {
+    color: #005f87;
+}

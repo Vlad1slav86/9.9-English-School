@@ -1,27 +1,108 @@
-/* General footer styling */
-footer {
-    background-color: #0872a8; /* Footer background color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    padding: 10px 0; /* Space inside the footer */
-    position: relative; /* Allow scrolling to push footer into view */
-    width: 100%; /* Full-width footer */
-  }
-  
-  /* Sticky footer behavior */
-  html, body {
-    margin: 0; 
-    padding: 0;
-    height: 100%; /* Ensure body fills the viewport */
-  }
-  
-  #root {
-    display: flex;
+/* Footer Section */
+.footer {
+  background-color: #0872a8;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.footer-address {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.footer-address h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.footer-address p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: white;
+}
+.footer-address strong {
+  color: white;
+}
+
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+  text-align: right;
+  padding-top: 21px;
+}
+
+.footer-links a {
+  display: block;
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* QR Code Section */
+.footer-qr-code {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  margin-top: 0px; 
+}
+
+.footer-qr-code h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff; 
+}
+
+.footer-qr-code p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #fff; 
+}
+
+.footer-qr-code img {
+  margin-top: 10px;
+  max-width: 150px; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
     flex-direction: column;
-    min-height: 100vh; /* Make the root container take up the full height */
+    align-items: center;
   }
-  
-  main {
-    flex: 1; /* Allow the main content to grow and push the footer down */
+
+  .footer-address,
+  .footer-links,
+  .footer-qr-code {
+    text-align: center;
+    margin-bottom: 20px;
   }
-  
+
+  .footer-qr-code {
+    margin-top: 0;
+  }
+}

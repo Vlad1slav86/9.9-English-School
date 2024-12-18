@@ -71,7 +71,7 @@
 .about-item .content h3,
 .about-item .content h4,
 .about-item .content p {
-  font-size: 16px; /* Adjust text size to fit */
+  font-size: 1rem; /* Adjust text size to fit */
   margin: 0 5px; /* Manage margins dynamically */
   margin-bottom: 10px;
   line-height: 1.2; /* Space text nicely */
@@ -81,8 +81,58 @@
   color: #0872a8;
 }
 
-/* Responsive adjustments */
+/* Tuition Fees Card */
+.tuition-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 22px;
+  width: 1260px; /* Larger card width */
+  padding: 40px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  background: white;
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+
+.tuition-card h3, .tuition-card h4 {
+  color: #0872a8;
+  font-size: 1.2rem;
+}
+
+.tuition-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #0872a8;
+}
+
+.tuition-card .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tuition-card .content .column {
+  width: 45%; /* Each column takes up 45% of the width */
+  text-align: left;
+}
+
+.tuition-card .content .column p {
+  margin: 8px 0;
+}
+
+/* Responsive adjustments for tuition card */
 @media (max-width: 768px) {
+  .sets-apart-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
   .about-item {
     width: 180px;
     height: 180px;
@@ -98,5 +148,21 @@
   .about-item .content h4,
   .about-item .content p {
     font-size: 0.7em; /* Dynamically scale down text on smaller devices */
+  }
+
+  /* Adjust tuition card for smaller screens */
+  .tuition-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .tuition-card .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tuition-card .content .column {
+    width: 100%; /* Stack the columns on smaller screens */
+    text-align: center;
   }
 }

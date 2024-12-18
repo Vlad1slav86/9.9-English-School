@@ -1,5 +1,4 @@
 import React from "react";
-import Instructor from "./Instructor";
 import "./Instructors.css";
 
 const Instructors = () => {
