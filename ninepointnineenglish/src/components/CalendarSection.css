@@ -1,12 +1,21 @@
 /* Combined .calendar-section styles */
 .calendar-section {
     padding: 1px;
-    background-color: white; 
+    background-color: #b8eeef; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     max-width: 840px; /* Limit the width */
-    margin: 0 auto; /* Center it horizontally */
-    margin-top: 20px;
+   
+
+    align-items: center;
+  }
+
+  .calendar-container {
+    background-color: #b8eeef;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    align-items: center;
+    
   }
   
   .calendar-header h2 {
@@ -14,7 +23,7 @@
     font-size: 1.8rem;
     color: #0872a8; 
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   .rbc-calendar {
@@ -59,3 +68,14 @@
     border: 1px solid #ccc !important;
   }
   
+  @media (max-width: 430px) {
+    .calendar-container .rbc-calendar {
+        width: 425px !important;
+        height: 400px !important;
+        margin-left:2px !important;
+    }
+    .calendar-container h2 {
+        font-size: 1.7rem;
+        margin-left:20px;
+    }
+  }

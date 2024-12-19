@@ -130,7 +130,7 @@ const CalendarSection = () => {
         selectable
         onSelectSlot={handleSelect} // Trigger modal for creating events
         onSelectEvent={(event) => handleEventClick(event)} // Trigger modal for event update/delete
-        style={{ height: 500 }}
+        style={{ marginLeft: 390, height: 600, width: 1000}}
         eventPropGetter={(event) => ({
           style: { backgroundColor: '#0872a8', color: 'white', borderRadius: '5px' },
         })}

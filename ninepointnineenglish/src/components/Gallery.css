@@ -96,3 +96,7 @@
         transform: translateX(-50%); /* Adjust as per your content */
     }
 }
+
+@media (max-width: 430px) {
+    
+}

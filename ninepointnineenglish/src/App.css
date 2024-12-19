@@ -90,7 +90,7 @@
   }
 
   .image-gallery img {
-      width: 100%; /* Images take full container width */
+      width: 200px; /* Images take full container width */
       height: auto; /* Maintain aspect ratio */
   }
 

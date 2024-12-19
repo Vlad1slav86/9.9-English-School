@@ -130,18 +130,19 @@
   .sets-apart-inner {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
   }
 
   .about-item {
-    width: 180px;
-    height: 180px;
+    width: 260px;
+    height: 200px;
   }
 
   .about-item h5 {
     width: 30px; /* Scale down number circle */
     height: 30px;
     font-size: 0.9rem; /* Adjust font size */
+    margin-top: 30px;
   }
 
   .about-item .content h3,
@@ -152,8 +153,9 @@
 
   /* Adjust tuition card for smaller screens */
   .tuition-card {
-    width: 100%;
+    width: 75%;
     padding: 20px;
+    margin-top: 30px;
   }
 
   .tuition-card .content {
@@ -165,4 +167,18 @@
     width: 100%; /* Stack the columns on smaller screens */
     text-align: center;
   }
+}
+
+@media (max-width: 430px) {
+  #about h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 1.7rem;
+    color: #0872a8;
+    font-family: Arial black, Helvetica, sans-serif;
+  }
+  .about-item {
+    padding: 50px;
+  }
+
 }
