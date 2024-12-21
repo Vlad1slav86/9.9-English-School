@@ -35,7 +35,7 @@ const App = () => {
           path="/"
           element={
             <>
-              <div className="main" id="main-section"></div> {/* Main section */}
+              <div className="main" id="main-section"><h1>It's a bright choice!</h1></div> {/* Main section */}
               <Gallery id="gallery-section" /> {/* Make sure Gallery has this ID */}
             </>
           }

@@ -10,7 +10,7 @@ const Header = () => {
       <Link to="/" className="logo-link">
         <div className="logo" style={{ backgroundImage: `url(${logoImage})` }}></div>
       </Link>
-      <p>It's a bright choice!</p>
+      {/* <p>It's a bright choice!</p> */}
     </header>
   );
 };

@@ -1,111 +1,107 @@
+/* Base Styles - Mobile First */
+
 /* Main Section */
 .main {
-  height: 90vh; /* Keep the full height */
+  height: auto; /* Allow height to adjust based on content */
+  min-height: 60vh; /* Ensure it at least fills the viewport */
   width: 100%; /* Full-width container */
-  margin: 0; /* No margin */
-  padding: 0; /* No extra padding */
-  background-image: url('/public/images/web_top_2022_11.gif'); /* Keep the background */
-  background-size: cover; /* Ensure full image coverage */
-  background-repeat: no-repeat;
-  background-position: center; /* Center the background image */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  margin: 0;
+  padding: 0;
+  background-image: url('/public/images/Paul_Main.jpeg'); /* Background image */
+  background-size: contain; /* Ensure the entire image is visible */
+  background-repeat: no-repeat; /* Prevent repetition */
+  background-position: center top; /* Center horizontally, align to the top vertically */
   display: flex;
-  flex-direction: column; /* Stack content vertically */
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* Align content to the top */
-  background-color: #b8eeef; /* Backup color */
-  font-size: 36px; /* Default font size */
+  background-color: whitesmoke; /* Fallback color */
 }
 
-/* Wrapper for Image Gallery with horizontal scrolling */
+#main-section h1{
+  font-size: 1.2rem;
+  color: #0872a8;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left: -120px;
+    margin-top: 25px;
+    transform: rotate(-8deg);
+}
+
+/* Image Gallery Wrapper */
 .image-gallery-wrapper {
   width: 100%; /* Full width of the screen */
   overflow: hidden; /* Hide overflowing content */
-  margin-top: 20px; /* Space between sections */
-  background-color: #f7f7f7; /* Keep the wrapper background */
+  margin-top: 10px; /* Smaller gap for mobile */
+  background-color: #f7f7f7; /* Wrapper background */
   display: flex;
-  justify-content: start; /* Align to the start */
-  align-items: center; /* Align images vertically */
-  padding: 10px 0; /* Padding for spacing */
+  flex-wrap: nowrap; /* Keep images in a single line */
+  gap: 10px; /* Smaller gaps for mobile */
+  justify-content: flex-start; /* Start alignment */
+  padding: 5px; /* Adjust padding */
 }
 
 /* Image Gallery Container */
 .image-gallery {
   display: flex; /* Horizontal alignment */
-  flex-wrap: nowrap; /* Prevent wrapping by default */
-  gap: 20px; /* Space between images */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 10px; /* Smaller gap between images */
   animation: scrollGallery 60s linear infinite; /* Scrolling animation */
+  justify-content: flex-start; /* Align to the start */
 }
 
-/* Keyframes for automatic horizontal scrolling */
+/* General Styling for Images */
+.image-gallery img {
+  width: 220px; /* Images take full container width */
+  height: 150px; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effects */
+.image-gallery img:hover {
+  transform: scale(1.2); /* Slight enlarge on hover */
+}
+
+/* Larger Screens */
+@media (min-width: 768px) {
+  .main {
+    height: 150vh; /* Adjust height for larger screens */
+    background-size:contain; /* Use cover for a more immersive look */
+    background-position: center; /* Center the image */
+    font-size: 30px; /* Larger font size for desktops */
+  }
+
+  #main-section h1{
+    font-size: 3.5rem;
+    margin-left: -500px;
+    margin-top: 100px;
+    transform: rotate(-8deg);
+  }
+
+  .image-gallery-wrapper {
+    padding: 10px 0; /* Add more spacing */
+    overflow: hidden; /* Enable hidden overflow */
+  }
+
+  .image-gallery {
+    flex-wrap: nowrap; /* Keep it in a single line */
+    animation: scrollGallery 60s linear infinite; /* Enable scrolling animation */
+    gap: 20px; /* Larger gaps */
+  }
+
+  .image-gallery img {
+    width: 300px; /* Fixed width for desktop */
+    height: 200px; /* Fixed height for consistency */
+  }
+}
+
+/* Keyframes for Scrolling Animation */
 @keyframes scrollGallery {
   0% {
     transform: translateX(0); /* Start at the first image */
   }
   100% {
     transform: translateX(-50%); /* Scroll halfway for seamless looping */
-  }
-}
-
-/* General styling for image elements */
-.image-gallery img {
-  width: 300px; /* Fixed width */
-  height: 200px; /* Fixed height */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-.image-gallery img:hover {
-  transform: scale(1.5); /* Enlarge on hover */
-}
-
-.image-gallery:hover {
-  animation-play-state: paused; /* Pause animation on hover */
-}
-
-/* Responsive Design for Smaller Screens */
-/* Responsive Adjustments for iPhone and Small Screens */
-@media (max-width: 430px) {
-  .main {
-      height: 300px; /* Let content determine height */
-      padding: 0px; /* Add breathing space */
-      font-size: 24px; /* Adjust font size for readability */
-  }
-
-  .image-gallery-wrapper {
-      padding: 5px;
-      overflow: visible;
-  }
-
-  .image-gallery {
-      flex-wrap: wrap; /* Stack images vertically */
-      animation: none !important;
-      gap: 10px; /* Reduce gap between images */
-      justify-content: center;
-  }
-
-  .gallery-image {
-    animation: none;
-  }
-
-  .image-gallery img {
-      width: 200px; /* Images take full container width */
-      height: auto; /* Maintain aspect ratio */
-  }
-
-  h1, h2 {
-      font-size: 1.5rem; /* Adjust heading size */
-      text-align: center; /* Center text */
-  }
-
-  .calendar-section {
-      padding: 10px; /* Reduce padding */
-      margin: 10px auto; /* Adjust margins */
-      max-width: 100%; /* Ensure calendar fits screen */
-  }
-
-  .rbc-calendar {
-      box-shadow: none; /* Simplify styles for smaller screens */
   }
 }

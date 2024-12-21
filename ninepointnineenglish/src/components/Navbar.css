@@ -1,118 +1,111 @@
-/* Style the navbar list container */
+/* Base Styles - Mobile First */
+
+/* Navbar List Container */
+/* header {
+  margin-top: 130px;
+} */
+
 nav ul {
   display: flex; /* Arrange list items in a row */
-  gap: 5px; /* Add 5px gap between items */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 5px; /* Space between items */
   list-style: none;
-  background-color: #b8eeef;
-  padding: 20px 0;
+  background-color: #0872a8; /* Navbar background color */
+  padding: 10px; /* Padding for links */
   margin: 0;
   justify-content: center; /* Center the links horizontally */
-  border-bottom: 1px solid #0872a8;
+  /* position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000;  */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
 }
 
-nav ul li i {
-  font-size: 2rem !important; /* Adjust size as needed */
-  margin-right: 8px; /* Add some space between the icon and the text */
-  vertical-align: middle; /* Align icons with the text */
-  color: #0872a8; /* Icon color */
-}
-
-nav ul li:hover i {
-  color: #005f8a; /* Change color on hover */
-}
-
-
-/* Style individual list items */
+/* Navbar List Items */
 nav li {
-  text-align: center;
+  text-align: center; /* Center text inside each item */
 }
 
-/* Style the links with just text and a border to the right */
+/* Navbar Links */
 nav a {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack text and icon vertically */
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  color: #0872a8;
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
   font-family: Arial, sans-serif;
-  padding: 0px 40px; /* Add horizontal padding */
-  /* border-right: 1px solid #0872a8;  */
-  transition: color 0.3s ease-in-out;
+  font-size: 0.9rem; /* Adjust text size for mobile */
+  padding: 5px 10px; /* Adjust padding */
+  transition: color 0.3s ease-in-out; /* Smooth hover effect */
 }
 
-/* Hover effect */
+/* Navbar Link Hover Effect */
 nav a:hover {
   color: white; /* Change text color on hover */
   text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Optional glow effect */
-  /* border-right: 2px solid #ffd700; Change the hover border color */
+  text-decoration: none;
 }
 
-/* Responsive text styles */
+/* Icons in Navbar */
+nav ul li i {
+  font-size: 0.6rem; /* Adjust icon size */
+  margin-right: 5px; /* Space between icon and text */
+  margin-bottom: 8px;
+  vertical-align: middle; /* Align icons with text */
+  color: white; /* Icon color */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect for Icons */
+nav ul li:hover i {
+  color: whitesmoke;
+}
+
+/* Text Styling inside Links */
 nav strong {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #0872a8;
-  margin-bottom: -10px;
-  margin-top: 10px;
+  font-size: 0.5rem; /* Adjust heading text size */
+  font-weight: bold; /* Bold text */
+  color: white; /* Default text color */
+  margin-bottom: -20px;
 }
-/* 
-nav strong:hover {
-  color: white;
-
-} */
 
 nav span {
-  font-size: 1rem;
+  font-size: 0.8rem; /* Smaller secondary text */
   display: block;
   color: #0872a8;
-  transition: color 0.3s;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  opacity: 65%;
+  opacity: 0.65; /* Slightly faded */
+  transition: color 0.3s ease;
 }
 
-/* nav a:hover span {
-  color: #ffd700;
-} */
+/* Hover Effect for Span */
+nav a:hover span {
+  color: #ffd700; /* Change color on hover */
+}
 
-@media (max-width: 430px) {
+/* Larger Screens */
+@media (min-width: 768px) {
+  nav ul {
+    justify-content: center; /* Center-align navbar items */
+    padding: 20px 0; /* Increase padding */
+    gap: 10px; /* Larger gap between items */
+  }
+
+  nav a {
+    padding: 10px 20px; /* Add more space for larger screens */
+    font-size: 2rem; /* Increase text size */
+  }
+
   nav ul li i {
-    font-size: 1rem !important; /* Adjust size as needed */
-    margin-right: 8px; /* Add some space between the icon and the text */
-   }
-
-   nav a {
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    
-    padding: 0px 0px; /* Add horizontal padding */
-   
+    font-size: 2rem; /* Larger icons */
   }
 
   nav strong {
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #0872a8;
-    margin-bottom: -20px;
-    margin-top: 10px;
-    padding: 5px;
+    font-size: 1.2rem; /* Larger heading text */
   }
 
-  nav ul {
-    display: flex; /* Arrange list items in a row */
-    gap: 5px; /* Add 5px gap between items */
-    list-style: none;
-    background-color: #b8eeef;
-    padding: 20px 0;
-    margin: 0;
-    justify-content: left; /* Center the links horizontally */
-    border-bottom: 2px solid #0872a8;
+  nav span {
+    font-size: 1rem; /* Larger secondary text */
   }
-
-  nav li {
-    text-align: left;
-  }
-  
 }

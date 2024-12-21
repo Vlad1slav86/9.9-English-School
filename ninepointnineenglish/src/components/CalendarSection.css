@@ -1,7 +1,7 @@
 /* Combined .calendar-section styles */
 .calendar-section {
     padding: 1px;
-    background-color: #b8eeef; 
+    background-color: whitesmoke; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     max-width: 840px; /* Limit the width */
@@ -11,7 +11,7 @@
   }
 
   .calendar-container {
-    background-color: #b8eeef;
+    background-color: whitesmoke;
     padding-bottom: 50px;
     padding-top: 50px;
     align-items: center;

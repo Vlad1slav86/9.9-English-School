@@ -1,67 +1,89 @@
+/* Base Styles - Mobile First */
+
 /* Header Styling */
 header {
   display: flex;
-  justify-content: space-between; /* Distribute space between elements */
-  align-items: center; /* Align items vertically in the center */
-  padding: 6px;
-  background-color: #f4f4f4;
-  position: relative; /* Enable absolute positioning for inner elements if needed */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center; /* Center elements for mobile */
+  align-items: center; /* Align items vertically */
+  padding: 10px;
+  background-color: whitesmoke; /* Background color */
+  position: relative; /* Enable absolute positioning for inner elements */
+  gap: 10px; /* Add space between elements for smaller screens */
 }
 
+/* Logo Styling */
 header .logo {
-  width: 600px;  /* Set width for logo container */
-  height: 120px;  /* Adjust the height as needed */
-  /* background-image: url('/public/images/tl_eikaiwa.gif');  */
-  background-size: contain; /* Make sure the logo fits the container */
+  width: 350px; /* Smaller logo for mobile */
+  height: 120px; /* Let height adjust automatically */
+  background-size: contain; /* Ensure the logo fits within container */
   background-repeat: no-repeat; /* Don't repeat the image */
-  background-position: center; /* Center the logo image within the container */
-  font-size: 24px;
+  background-position: center; /* Center the logo */
+  font-size: 20px; /* Adjust font size for readability */
   font-weight: bold;
+  margin: 0 auto; /* Center logo */
 }
 
-/* Header text styling */
+/* Header Text Styling */
 header p {
-  font-size: 2.3rem; /* Equivalent to 32px, adjust as needed */
-  font-weight: bold; /* Optional: make the text bolder */
-  color: #0872a8;
+  font-size: 1.2rem; /* Smaller font size for mobile */
+  font-weight: bold; /* Make text bold */
+  color: #0872a8; /* Font color */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0; /* Remove any default margin for consistency */
-  padding-top: 43px;
-  left: 50%; /* Move to the horizontal center */
-  transform: translateX(-50%); /* Offset by half its width to center align */
-  text-align: center; /* Center text within the <p> */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center align text */
 }
 
-/* Navigation styling */
+/* Navigation Styling */
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Horizontal navigation */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  gap: 10px; /* Add spacing */
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Center navigation */
 }
 
 nav a {
-  text-decoration: none;
-  color: #333;
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Link color */
+  font-size: 1rem; /* Adjust font size */
+  padding: 5px 10px; /* Add spacing */
 }
 
-header .logo img {
-  height: 90px; /* You can keep this if needed for older code compatibility, but it's now managed by background-image */
+/* Hover Effect for Links */
+nav a:hover {
+  color: #0872a8; /* Change color on hover */
+  text-decoration: underline; /* Optional: Add underline on hover */
 }
 
-@media (max-width: 430px) {
+/* Larger Screens */
+@media (min-width: 768px) {
+  header {
+    flex-wrap: nowrap; /* Disable wrapping */
+    justify-content: center; /* Distribute elements */
+    padding: 20px; /* Add spacing for larger screens */
+  }
+
   header .logo {
-  width: 400px;  
-  height: 90px;
+    width: 700px; /* Larger logo size for desktops */
+    height: 120px; /* Fixed height */
   }
 
   header p {
-font-size: 1.2rem;
-margin-top: -30px;
-padding-left: 205px;
+    font-size: 2.3rem; /* Larger text size */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    left: 50%; /* Center align text */
+    transform: translateX(-50%); /* Offset for alignment */
   }
 
-header {
-  flex-wrap: wrap;
-  
-}
+  nav ul {
+    gap: 20px; /* Larger gap between navigation links */
+  }
+
+  nav a {
+    font-size: 1.2rem; /* Larger font size for links */
+  }
 }
