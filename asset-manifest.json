@@ -1,10 +1,15 @@
 {
   "files": {
-    "main.css": "/9.9-English-School/static/css/main.b76f5614.css",
-    "main.js": "/9.9-English-School/static/js/main.01173fa1.js",
-    "static/js/453.f7b5317a.chunk.js": "/9.9-English-School/static/js/453.f7b5317a.chunk.js",
+    "main.css": "/9.9-English-School/static/css/main.860c75a1.css",
+    "main.js": "/9.9-English-School/static/js/main.6f6fc1b8.js",
+    "static/js/453.72a6eff1.chunk.js": "/9.9-English-School/static/js/453.72a6eff1.chunk.js",
+    "static/media/Paul_2.jpeg": "/9.9-English-School/static/media/Paul_2.945b3c57fbff6a94e150.jpeg",
+    "static/media/Justin_2.jpeg": "/9.9-English-School/static/media/Justin_2.d3c09114df2a36428526.jpeg",
+    "static/media/Justin_1.jpeg": "/9.9-English-School/static/media/Justin_1.48d8d95845a3a0d5f84e.jpeg",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/9.9-English-School/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/web_top_2022_11.gif": "/9.9-English-School/static/media/web_top_2022_11.f4b66277283526f86fad.gif",
+    "static/media/Paul_1.jpeg": "/9.9-English-School/static/media/Paul_1.cb75cc1e546e155ab0ec.jpeg",
+    "static/media/Paul_Main.jpeg": "/9.9-English-School/static/media/Paul_Main.c49e72bc50b1d8c95a3a.jpeg",
+    "static/media/Paul_3.jpeg": "/9.9-English-School/static/media/Paul_3.08533318f5f5f474a060.jpeg",
     "static/media/fontawesome-webfont.eot": "/9.9-English-School/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/9.9-English-School/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/9.9-English-School/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
@@ -29,12 +34,12 @@
     "static/media/student_reisuke.jpg": "/9.9-English-School/static/media/student_reisuke.39c15b80d11abd0cc4a6.jpg",
     "static/media/sutudent_aoi_DSC02296.jpg": "/9.9-English-School/static/media/sutudent_aoi_DSC02296.d06d6c98e384ba3c1c4d.jpg",
     "index.html": "/9.9-English-School/index.html",
-    "main.b76f5614.css.map": "/9.9-English-School/static/css/main.b76f5614.css.map",
-    "main.01173fa1.js.map": "/9.9-English-School/static/js/main.01173fa1.js.map",
-    "453.f7b5317a.chunk.js.map": "/9.9-English-School/static/js/453.f7b5317a.chunk.js.map"
+    "main.860c75a1.css.map": "/9.9-English-School/static/css/main.860c75a1.css.map",
+    "main.6f6fc1b8.js.map": "/9.9-English-School/static/js/main.6f6fc1b8.js.map",
+    "453.72a6eff1.chunk.js.map": "/9.9-English-School/static/js/453.72a6eff1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b76f5614.css",
-    "static/js/main.01173fa1.js"
+    "static/css/main.860c75a1.css",
+    "static/js/main.6f6fc1b8.js"
   ]
 }
