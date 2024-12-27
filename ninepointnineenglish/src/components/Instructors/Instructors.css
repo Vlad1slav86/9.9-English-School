@@ -1,117 +1,97 @@
-/* Instructors section styling */
+/* Mobile-first styling for the Instructors section */
 #instructors {
   padding: 20px;
-  background-color: whitesmoke; /* Background color for the section */
+  background-color: #fff200;
 }
+
 #instructors p {
-  color:#0872a8;
+  color: #0872a8;
   opacity: 75%;
 }
 
 #instructors strong {
-  color:#0872a8;
-  font-size: 1.5rem;
+  color: #0872a8;
+  font-size: 1.2rem;
 }
+
+#instructors h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #0872a8;
+  margin-bottom: 40px;
+  font-family: Arial black, Helvetica, sans-serif;
+}
+
 .instructors-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction:column; /* Stack the instructor cards vertically */
-  gap: 20px; /* Add spacing between cards */
+  flex-direction: column; /* Stack the instructor cards vertically by default */
+  gap: 20px;
 }
 
 .instructor-card {
-  background-color: white; /* White background for the card */
-  
-  background-size: cover;
-  border-radius: 8px; /* Rounded corners for the card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
-  display: flex; /* Display images and bio side by side */
-  padding: 20px;
-  align-items: left;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
   flex-direction: column; /* Stack content vertically */
-  text-align: left; /* Center text within the card */
+  padding: 20px;
+  text-align: left;
 }
 
 .instructor-info {
-  display: flex; /* Align the image and bio side by side */
-  gap: 20px; /* Space between the image and the bio */
+  display: block; /* Stack image and bio vertically on small screens */
+  gap: 20px;
+  text-align: left;
 }
 
 .bio {
-  flex: 1; /* Allow the bio section to take up remaining space */
-}
-
-.bio-text {
   margin-top: 10px;
 }
 
 .bio-text p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
-#instructors h2 {
-  text-align: center;
-  font-size: 2.3rem;
-  color: #0872a8;
-  margin-bottom: 60px;
-  font-family: Arial black, Helvetica, sans-serif;
-}
-
-h3 {
-  margin: 0;
-  font-size: 2rem;
+.instructor-main-image {
+  width: 100%;
+  height: 350px;
+  max-width: 350px;
+  max-height: 350px;
+  margin: 0 auto 10px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
 }
 
 .small-images {
   display: flex;
-  justify-content: left; /* Center images horizontally inside the card */
-  gap: 15px; /* Consistent spacing between images */
-  width: 100%;  /* Make sure small images fill the card width */
-  height: 250px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
   margin-top: 10px;
-  padding: 10px;  /* Added some padding to ensure images have space to grow */
-  flex-wrap: wrap;  /* Allow images to wrap on smaller screens */
 }
 
 .instructor-small-image {
-  width: 150px;  /* Set the width for all small images for consistency */
-  height: 100px;
-  object-fit: cover;
+  width: 120px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
   border-radius: 8px;
-  transition: transform 0.4s ease-in-out;  /* Smooth transition effect */
-  image-rendering: auto;  /* Prevents the image from becoming blurry when scaled */
+  transition: transform 0.4s ease-in-out;
 }
 
 .instructor-small-image:hover {
-  transform: scale(2);  /* Double the size of the image */
-  z-index: 1;  /* Ensure the hovered image appears above other content */
-  cursor: pointer;  /* Change cursor to indicate interactivity */
-  image-rendering: auto;  /* Ensure high quality scaling */
+  transform: scale(2);
+  z-index: 1;
+  cursor: pointer;
 }
 
-.instructor-main-image {
-  width: 250px;
-  height: 250px; /* Adjust the height to fit your design */
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-}
-
-.instructor-small-image {
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-  background-position: center;
-  margin: 10px;
-}
-
-/* Instructor 1 - Paul */
+/* Image Links */
 .instructor-main-image.paul {
   background-image: url('/public/images/paul2013.jpg');
 }
 
-/* Instructor 1 - Small Images */
 .instructor-small-image.paul-small-1 {
   background-image: url('/public/images/Paul_DSC02343.jpg');
 }
@@ -128,12 +108,10 @@ h3 {
   background-image: url('/public/images/sPaul_DSC02397.jpg');
 }
 
-/* Instructor 2 - Lewis */
 .instructor-main-image.lewis {
   background-image: url('/public/images/Lewis_Top_s.jpg');
 }
 
-/* Instructor 2 - Small Images */
 .instructor-small-image.lewis-small-1 {
   background-image: url('/public/images/Lewis_1s.jpg');
 }
@@ -150,12 +128,10 @@ h3 {
   background-image: url('/public/images/Lewis_4s.jpg');
 }
 
-/* Instructor 3 - Justin */
 .instructor-main-image.justin {
   background-image: url('/public/images/Justin_DSC02302.jpg');
 }
 
-/* Instructor 3 - Small Images */
 .instructor-small-image.justin-small-1 {
   background-image: url('/public/images/Justin_Aoi_IMG_0844.jpg');
 }
@@ -172,48 +148,48 @@ h3 {
   background-image: url('/public/images/Justin_yuma_kimika_satsuki.jpg');
 }
 
-/* Instructor 4 - Chinatsu */
 .instructor-main-image.chinatsu {
   background-image: url('/public/images/chinatsu3.jpg');
 }
 
-@media (max-width: 430px) {
-  
-  .instructor-main-image {
-    width: 220px; /* Set the main image width */
-    height: 220px; /* Set the main image height */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
-    border-radius: 8px; /* Rounded corners for the image */
-  }
-  
-  .instructor-small-image {
-    width: 80px;
-    height: 80px;
-    background-size: cover;
-    background-position: center;
-    margin: 10px;
-  }
-
+/* Larger screen adjustments */
+@media (min-width: 1024px) {
   #instructors h2 {
-    text-align: center;
-    font-size: 1.7rem;
-    color: #0872a8;
-    margin-bottom: 60px;
-    font-family: Arial black, Helvetica, sans-serif;
+    font-size: 2rem;
   }
 
-  #instructors strong {
-    color:#0872a8;
-    font-size: 1.2rem;
+  .instructors-container {
+    flex-direction: row; /* Align cards horizontally */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 40px; /* Add spacing between rows */
+    justify-content: space-around; /* Space cards evenly */
   }
 
-  .bio-text p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+  .instructor-card {
+    /* flex: 1 1 calc(45% - 20px); 
+    max-width: calc(45% - 20px); */
+    padding: 20px;
+    
   }
 
   .instructor-info {
-    display: block; /* Align the image and bio side by side */
-    gap: 20px; /* Space between the image and the bio */
+    display: flex; /* Align image and bio side by side */
+    gap: 20px;
+  }
+
+  .instructor-main-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .small-images {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+  }
+
+  .instructor-small-image {
+    width: 180px;
+    height: 100px;
   }
 }

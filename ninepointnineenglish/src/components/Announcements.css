@@ -1,23 +1,22 @@
+/* Base styles for mobile-first design */
 #announcements {
-    padding: 40px;
-    background-color: whitesmoke;
-    /* background-image: url('/public/images/Paul_Sticker.jpeg'); */
-    
+    padding: 20px;
+    background-color: #fff200;
     background-repeat: no-repeat;
-    background-position: 1330px;
+    background-position: center; /* Center background image for small screens */
   }
   
   #announcements h2 {
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     color: #0872a8;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-family: Arial black, Helvetica, sans-serif;
   }
   
   #announcements h3 {
     margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #0872a8;
   }
   
@@ -26,21 +25,21 @@
     flex-direction: column;
     align-items: center; /* Center the cards horizontally */
     gap: 20px;
-    max-width: 1000px; /* Set a max width to prevent cards from stretching too wide */
-    margin: 0 auto; /* Center the container within the parent */
+    max-width: 100%; /* Allow full width for smaller screens */
+    margin: 0 auto;
   }
   
   .announcement-card {
     background-color: white;
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%; /* Make cards take up 100% of their parent container */
-    max-width: 800px; /* Max width for each card to prevent stretching */
+    width: 100%; /* Take full width on mobile screens */
+    max-width: 800px; /* Restrict card width */
   }
   
   .announcement-card h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
   }
@@ -52,39 +51,49 @@
   }
   
   .announcement-card p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #0872a8;
     line-height: 1.6;
   }
   
-.Calendar-container {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 840px;
-    height:450px;
-    margin-top:30px;
-    margin-left: 436px;
+  .Calendar-container {
+    background-color: white; /* Match card background */
     border-radius: 8px;
-}
-
-  @media (max-width: 430px) {
-    #announcements h2 {
-      font-size: 1.7rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px; /* Match announcement card width */
+    height: 450px; /* Fixed height for consistency */
+    margin: 20px auto; /* Center the calendar */
+  }
+  
+  /* Styles for larger screens */
+  @media (min-width: 768px) {
+    #announcements {
+      padding: 40px;
+      background-position: right; /* Move background image to the right for larger screens */
     }
   
-    .announcement-card h3 {
+    #announcements h2 {
+      font-size: 2rem;
+      margin-bottom: 60px;
+    }
+  
+    #announcements h3 {
       font-size: 1.5rem;
     }
   
-    .announcement-card p {
-      font-size: 1rem;
+    .announcement-container {
+      max-width: 1000px; /* Restrict container width */
     }
-
+  
     .Calendar-container {
-        width: 390px;
-        margin-top:30px;
-        margin-left: -20px;
-        border-radius: 8px;
-        padding-bottom: 0px !important;
+      height: 500px; /* Slightly taller calendar for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #announcements {
+      background-position: 1330px; /* Move background image further right for extra-large screens */
     }
   }
   

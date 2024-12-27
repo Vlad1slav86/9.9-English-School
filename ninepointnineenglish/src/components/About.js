@@ -121,7 +121,7 @@ const tuitionFees = {
 const About = () => {
   return (
     <section id="about">
-      <h2>About Us</h2>
+      <h2>アバウト</h2>
       <div className="sets-apart-inner">
         {aboutItems.map((item, index) => (
           <div key={index} className={`about-item item-${index + 1}`}>

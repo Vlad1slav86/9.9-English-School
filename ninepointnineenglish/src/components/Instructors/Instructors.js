@@ -91,7 +91,7 @@ const Instructors = () => {
 
   return (
     <section id="instructors">
-      <h2>Meet Our Instructors</h2>
+      <h2>講師紹介</h2>
       <div className="instructors-container">
         {instructorData.map((instructor, index) => (
           <div key={index} className="instructor-card">

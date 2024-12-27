@@ -46,6 +46,14 @@ const Navbar = () => {
         {/* <span>Calendar</span> */}
         </li>
         <li>
+          <Link to="/recruitment">
+            <i className="fa fa-briefcase"></i>
+            <strong>採用情報</strong>
+            <br />
+            {/* <span>Recruitment</span> */}
+          </Link>
+        </li>
+        <li>
           <Link to="/contact">
             <i className="fa fa-envelope"></i> {/* Contact icon */}
             <strong>お問い合わせ</strong>

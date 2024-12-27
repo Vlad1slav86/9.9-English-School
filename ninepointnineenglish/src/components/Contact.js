@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="contact-container">
-        <h2>Contact Us</h2>
+        <h2>お問い合わせ</h2>
         <div className="contact-info">
           <div className="school-info">
             <h3>学校所在地</h3>
@@ -62,10 +62,11 @@ const Contact = () => {
           </div>
 
           <div className="line-qr-code">
-            <h3>Recruitment Line</h3>
-            <p>Scan the QR code below to connect with us on Line:</p>
+            <h3>採用情報 (LINE)</h3>
+            <p>下記のQRコードをスキャンして、私たちとLINEでつながりましょう。</p>
             <QRCodeCanvas value={lineAccountUrl} size={150} bgColor="#ffffff" fgColor="#000000" />
-            <p>Alternatively, <a href={lineAccountUrl} target="_blank" rel="noopener noreferrer">click here</a> to open Line.</p>
+            <p>または、<a href={lineAccountUrl} target="_blank" rel="noopener noreferrer">こちらをクリック</a>してLINEを開いてください。</p>
+
           </div>
         </div>
       </div>

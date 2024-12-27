@@ -44,7 +44,7 @@ nav a {
 /* Navbar Link Hover Effect */
 nav a:hover {
   color: white; /* Change text color on hover */
-  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Optional glow effect */
+  /* text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; Optional glow effect */
   text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ nav ul li i {
 
 /* Hover Effect for Icons */
 nav ul li:hover i {
-  color: whitesmoke;
+  color: #fff200;
 }
 
 /* Text Styling inside Links */
@@ -80,11 +80,21 @@ nav span {
 }
 
 /* Hover Effect for Span */
-nav a:hover span {
-  color: #ffd700; /* Change color on hover */
+nav a:hover strong {
+  color: #fff200; /* Change color on hover */
 }
 
 /* Larger Screens */
+@media (max-width: 380px) {
+  nav strong {
+    font-size: 0.38rem; /* Adjust heading text size */
+    font-weight: bold; /* Bold text */
+    color: white; /* Default text color */
+    margin-bottom: -20px;
+  }
+
+}
+
 @media (min-width: 768px) {
   nav ul {
     justify-content: center; /* Center-align navbar items */

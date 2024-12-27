@@ -1,7 +1,7 @@
 /* General container */
 #about {
   padding-top: 40px;
-  background-color: whitesmoke;
+  background-color: 	#fff200;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +44,7 @@
 }
 
 .about-item:hover {
-  transform: scale(1.1); /* Reduced hover scale for better readability */
+  transform: scale(1.5); /* Reduced hover scale for better readability */
 }
 
 /* Styling for the number */

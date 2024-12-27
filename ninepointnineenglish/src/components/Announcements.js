@@ -23,7 +23,7 @@ const Announcements = () => {
 
   return (
     <section id="announcements">
-      <h2>Announcements</h2>
+      <h2>お知らせ</h2>
       <div className="announcement-container">
         {announcements.map((announcement, index) => (
           <div key={index} className="announcement-card">

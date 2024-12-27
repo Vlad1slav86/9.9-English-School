@@ -1,0 +1,68 @@
+#recruitment {
+    padding: 20px;
+    background-color: #fff200;
+    color: #005f87;
+    line-height: 1.6;
+}
+
+.recruitment-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #0872a8;
+    font-family: Arial Black, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.recruitment-container p {
+    margin: 10px 20px;
+    font-size: 1.2rem;
+    color: #005f87;
+}
+
+.recruitment-line-qr-code {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff200;
+    /* border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.line-qr-code h3 {
+    font-size: 1.5rem;
+    color: #0872a8;
+    margin-bottom: 15px;
+}
+
+.line-qr-code a {
+    color: #0872a8;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.line-qr-code a:hover {
+    color: #005f87;
+}
+
+@media (max-width: 430px) {
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .line-qr-code {
+        padding: 15px;
+    }
+
+    .line-qr-code h3 {
+        font-size: 1.3rem;
+    }
+}

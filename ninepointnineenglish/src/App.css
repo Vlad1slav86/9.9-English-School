@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* Align content to the top */
-  background-color: whitesmoke; /* Fallback color */
+  background-color: #fff200; /* Fallback color */
 }
 
 #main-section h1{
@@ -26,6 +26,25 @@
     margin-top: 25px;
     transform: rotate(-8deg);
 }
+
+#main-section h2 {
+  font-size: 0.5rem;
+  color: #0872a8;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#message {
+  position: relative; /* Required for the pseudo-element */
+  width: 40vw;
+  margin: 100px auto; /* Center horizontally */
+  padding: 20px;
+  background-color: rgba(255, 242, 0, 0.9); /* Slightly transparent yellow */
+  border-radius: 8px;
+  color: #000; /* Text color */
+  z-index: 1; /* Ensure the text stays above the pseudo-element */
+  overflow: hidden; /* Clip any overflow from pseudo-elements */
+}
+
 
 /* Image Gallery Wrapper */
 .image-gallery-wrapper {
@@ -79,6 +98,17 @@
     transform: rotate(-8deg);
   }
 
+  #main-section h2 {
+    font-size: 1.5rem;
+    color: #0872a8;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  #message {
+    width: 30vw;
+    margin-top: 500px;
+    
+  }
   .image-gallery-wrapper {
     padding: 10px 0; /* Add more spacing */
     overflow: hidden; /* Enable hidden overflow */

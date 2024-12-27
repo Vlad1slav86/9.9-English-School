@@ -7,9 +7,10 @@ import Announcements from "./components/Announcements";
 import Footer from "./components/Footer";
 import CalendarSection from "./components/CalendarSection";
 import Instructors from "./components/Instructors/Instructors.js";
+import Recruitment from "./components/Recruitment.js";
 import Contact from "./components/Contact.js";
 import Gallery from "./components/Gallery.js";
-import Dropdown from "./components/Dropdown"; // Import Dropdown
+import Dropdown from "./components/Dropdown"; 
 import "./App.css";
 
 // Wrap the logic that needs useLocation inside a component that's rendered by Router
@@ -35,7 +36,14 @@ const App = () => {
           path="/"
           element={
             <>
-              <div className="main" id="main-section"><h1>It's a bright choice!</h1></div> {/* Main section */}
+              <div className="main" id="main-section">
+                <h1>It's a bright choice!</h1>
+                {/* <div id="message"><h2>Hi! I'm Paul, the president of 9.9.<br/> We now have over 300 students in more than 100 group and private classes.
+                  <br/>
+                  I am sure we will be able to match your child with the perfect class. <br/>Please give us a call or stop by.
+                </h2>
+                </div> */}
+                </div> {/* Main section */}
               <Gallery id="gallery-section" /> {/* Make sure Gallery has this ID */}
             </>
           }
@@ -46,6 +54,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/announcements" element={<Announcements />} />
         <Route path="/calendar" element={<CalendarSection />} />
+        <Route path="/recruitment" element={<Recruitment />} />
       </Routes>
 
       <Footer />

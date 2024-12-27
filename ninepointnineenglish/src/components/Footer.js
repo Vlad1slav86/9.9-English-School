@@ -22,12 +22,13 @@ const Footer = () => {
         </div>
 
         {/* QR Code Section */}
-        {/* <div className="footer-qr-code">
-          <h3>Follow Us on Line</h3>
-          <QRCodeCanvas value={lineAccountUrl} size={150} bgColor="#ffffff" fgColor="#000000" />
-          <p>Scan the QR code to connect with us on Line!</p>
-          <p>Alternatively, <a href={lineAccountUrl} target="_blank" rel="noopener noreferrer"><i className="fa fa-link"></i> click here</a> to open Line.</p>
-        </div> */}
+        <div className="footer-qr-code">
+  <h3>採用情報 (LINE)</h3>
+  <QRCodeCanvas value={lineAccountUrl} size={150} bgColor="#ffffff" fgColor="#000000" />
+  <p>QRコードをスキャンしてLINEでつながりましょう！</p>
+  <p>または、<a href={lineAccountUrl} target="_blank" rel="noopener noreferrer"><i className="fa fa-link"></i> こちらをクリック</a>してLINEを開いてください。</p>
+</div>
+
 
         {/* Navigation Links */}
         <div className="footer-links">
@@ -36,6 +37,7 @@ const Footer = () => {
   <Link to="/instructors"><i className="fa fa-users"></i> 講師紹介</Link> {/* Instructors */}
   <Link to="/announcements"><i className="fa fa-bullhorn"></i> お知らせ</Link> {/* Announcements */}
   <Link to="/calendar"><i className="fa fa-calendar"></i> カレンダー</Link> {/* Calendar */}
+  <Link to="/recruitment"><i className="fa fa-briefcase"></i>採用情報</Link> {/* Calendar */}
   <Link to="/contact"><i className="fa fa-envelope"></i> お問い合わせ</Link> {/* Contact */}
 </div>
 
