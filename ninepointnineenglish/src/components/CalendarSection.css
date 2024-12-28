@@ -15,7 +15,7 @@
   
   .calendar-container iframe {
     width: 95%; /* Take up most of the screen width */
-    height: 400px; /* Adjust iframe height for smaller screens */
+    height: 350px; /* Adjust iframe height for smaller screens */
     margin: 0 auto; /* Center the iframe */
   }
   
@@ -40,7 +40,7 @@
     }
   
     .calendar-container iframe {
-      width: 70%; /* Use more precise width */
+      width: 90%; /* Use more precise width */
       height: 800px;
       margin: 0 auto;
     }

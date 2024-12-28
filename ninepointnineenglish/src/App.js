@@ -43,8 +43,8 @@ const App = () => {
                   I am sure we will be able to match your child with the perfect class. <br/>Please give us a call or stop by.
                 </h2>
                 </div> */}
-                </div> {/* Main section */}
-              <Gallery id="gallery-section" /> {/* Make sure Gallery has this ID */}
+                </div> 
+              <Gallery id="gallery-section" /> 
             </>
           }
         />

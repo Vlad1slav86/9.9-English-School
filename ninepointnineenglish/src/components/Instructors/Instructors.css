@@ -54,15 +54,16 @@
 }
 
 .instructor-main-image {
-  width: 100%;
-  height: 350px;
-  max-width: 350px;
-  max-height: 350px;
-  margin: 0 auto 10px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
+  width: 80%; /* Ensures the image takes up most of the container's width */
+  height: 35vh; /* Adjust height relative to the viewport */
+  max-width: 60vw; /* Limits the width for larger screens */
+  max-height: 50vh; /* Limits the height for larger screens */
+  /* margin: 0 auto 10px;  */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  border-radius: 8px; /* Adds rounded corners */
 }
+
 
 .small-images {
   display: flex;
@@ -153,7 +154,7 @@
 }
 
 /* Larger screen adjustments */
-@media (min-width: 1024px) {
+@media (min-width: 650px) {
   #instructors h2 {
     font-size: 2rem;
   }

@@ -22,7 +22,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 30px;
 }
 
 /* Base card styles */
@@ -34,7 +34,7 @@
   justify-content: center;
   text-align: center;
   border-radius: 22px;
-  width: 300px;
+  width: 250px;
   height: 300px;
   padding: 40px;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
@@ -43,9 +43,9 @@
   overflow: hidden; /* Prevent text overflow */
 }
 
-.about-item:hover {
-  transform: scale(1.5); /* Reduced hover scale for better readability */
-}
+/* .about-item:hover {
+  transform: scale(1.5); 
+} */
 
 /* Styling for the number */
 .about-item h5 {
@@ -90,12 +90,17 @@
   justify-content: center;
   text-align: center;
   border-radius: 22px;
-  width: 1260px; /* Larger card width */
+  width: 270px; /* Larger card width */
   padding: 40px;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
   background: white;
-  margin-top: 110px;
-  margin-bottom: 110px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tuition-card .content .column {
+  width: 100%; /* Stack the columns on smaller screens */
+  text-align: center;
 }
 
 .tuition-card h3, .tuition-card h4 {
@@ -110,63 +115,69 @@
   color: #0872a8;
 }
 
-.tuition-card .content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
 
-.tuition-card .content .column {
-  width: 45%; /* Each column takes up 45% of the width */
-  text-align: left;
-}
+
 
 .tuition-card .content .column p {
   margin: 8px 0;
 }
 
 /* Responsive adjustments for tuition card */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .sets-apart-inner {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
   }
 
+  .about-item:hover {
+    transform: scale(1.2); 
+  }
+  
   .about-item {
-    width: 260px;
-    height: 200px;
+    width: 360px;
+    height: 360px;
   }
 
   .about-item h5 {
-    width: 30px; /* Scale down number circle */
-    height: 30px;
-    font-size: 0.9rem; /* Adjust font size */
-    margin-top: 30px;
+    width: 50px; /* Scale down number circle */
+    height: 50px;
+    font-size: 1.5rem; /* Adjust font size */
+    margin-top: 50px;
   }
 
   .about-item .content h3,
   .about-item .content h4,
   .about-item .content p {
-    font-size: 0.7em; /* Dynamically scale down text on smaller devices */
+    font-size: 1rem; /* Dynamically scale down text on smaller devices */
   }
 
   /* Adjust tuition card for smaller screens */
   .tuition-card {
     width: 75%;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 45px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .tuition-card:hover {
+    transform: scale(1.1); 
   }
 
   .tuition-card .content {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
+  
 
   .tuition-card .content .column {
-    width: 100%; /* Stack the columns on smaller screens */
+    width: 45%; /* Each column takes up 45% of the width */
     text-align: center;
   }
+
 }
 
 @media (max-width: 430px) {
