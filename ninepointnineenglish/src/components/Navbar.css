@@ -1,121 +1,160 @@
-/* Base Styles - Mobile First */
+/* Base Styles */
+nav {
+  position: relative;
+  background-color: #0872a8; /* Navbar background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  padding: 0px 0; /* Add vertical padding */
+}
 
-/* Navbar List Container */
-/* header {
-  margin-top: 130px;
+/* Hamburger Menu Button */
+/* .nav-toggle {
+  display: none; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #0872a8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 2000;
+  transition: background-color 0.3s ease;
 } */
 
-nav ul {
-  display: flex; /* Arrange list items in a row */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  gap: 5px; /* Space between items */
-  list-style: none;
-  background-color: #0872a8; /* Navbar background color */
-  padding: 10px; /* Padding for links */
-  margin: 0;
-  justify-content: center; /* Center the links horizontally */
-  /* position: fixed; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  z-index: 1000;  */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+.nav-toggle:hover {
+  background-color: #065a84; /* Darker blue on hover */
 }
 
-/* Navbar List Items */
-nav li {
-  text-align: center; /* Center text inside each item */
+.nav-toggle::before,
+.nav-toggle::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: white;
+  margin: 5px auto;
+  transition: all 0.3s ease;
 }
+
+.nav-toggle.open::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.open::after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 
 /* Navbar Links */
-nav a {
+nav ul {
   display: flex;
-  flex-direction: column; /* Stack text and icon vertically */
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  text-decoration: none; /* Remove underline */
-  color: white; /* Text color */
-  font-family: Arial, sans-serif;
-  font-size: 0.9rem; /* Adjust text size for mobile */
-  padding: 5px 10px; /* Adjust padding */
-  transition: color 0.3s ease-in-out; /* Smooth hover effect */
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  background-color: #0872a8;
+  transition: max-height 0.3s ease; /* Smooth dropdown effect */
+  overflow: hidden; /* Prevent content overflow */
 }
 
-/* Navbar Link Hover Effect */
-nav a:hover {
-  color: white; /* Change text color on hover */
-  /* text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; Optional glow effect */
+nav ul li strong{
+  margin: 10px 0;
+  color: white;
+}
+
+nav ul a {
   text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Icons in Navbar */
+/* Hover Effects for Links */
+nav ul a:hover {
+  background-color: #065a84; /* Highlight link background */
+  transform: translateY(-3px); /* Subtle lift effect */
+  color: #fff200; /* Bright yellow text on hover */
+}
+
 nav ul li i {
-  font-size: 0.6rem; /* Adjust icon size */
-  margin-right: 5px; /* Space between icon and text */
-  margin-bottom: 8px;
-  vertical-align: middle; /* Align icons with text */
-  color: white; /* Icon color */
-  transition: color 0.3s ease-in-out;
+  margin-right: 8px;
+  font-size: 1.2rem; /* Adjust icon size */
+  vertical-align: middle;
 }
 
-/* Hover Effect for Icons */
-nav ul li:hover i {
-  color: #fff200;
-}
-
-/* Text Styling inside Links */
-nav strong {
-  font-size: 0.5rem; /* Adjust heading text size */
-  font-weight: bold; /* Bold text */
-  color: white; /* Default text color */
-  margin-bottom: -20px;
-}
-
-nav span {
-  font-size: 0.8rem; /* Smaller secondary text */
-  display: block;
-  color: #0872a8;
-  opacity: 0.65; /* Slightly faded */
-  transition: color 0.3s ease;
-}
-
-/* Hover Effect for Span */
-nav a:hover strong {
-  color: #fff200; /* Change color on hover */
+/* Active Links */
+nav ul a.active {
+  background-color: #065a84; /* Highlight active link */
+  color: #fff200; /* Bright yellow */
 }
 
 /* Larger Screens */
-@media (max-width: 380px) {
-  nav strong {
-    font-size: 0.38rem; /* Adjust heading text size */
-    font-weight: bold; /* Bold text */
-    color: white; /* Default text color */
-    margin-bottom: -20px;
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none; /* Hide toggle button on larger screens */
   }
 
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    padding:20px;
+    
+  }
+
+  nav ul li {
+    margin: 0 -10px; /* Add horizontal spacing between links */
+  }
+
+  nav ul a {
+    font-size: 1.7rem; /* Slightly larger font for desktop */
+  }
+
+  nav ul a strong {
+    font-size: 1.2rem;
+  }
+
+  nav ul a:hover {
+    transform: translateY(-5px); /* More pronounced lift effect */
+  }
 }
 
-@media (min-width: 768px) {
+/* Small Screens */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block; /* Show toggle button on smaller screens */
+  }
+
+  nav {
+    position: absolute;
+    border-bottom-right-radius: 8px;
+  }
+
   nav ul {
-    justify-content: center; /* Center-align navbar items */
-    padding: 20px 0; /* Increase padding */
-    gap: 10px; /* Larger gap between items */
+    display: none; /* Hide navbar links by default */
+    flex-direction: column;
   }
 
-  nav a {
-    padding: 10px 20px; /* Add more space for larger screens */
-    font-size: 2rem; /* Increase text size */
+  nav ul.active {
+    display: flex; /* Show navbar links when toggled */
   }
 
-  nav ul li i {
-    font-size: 2rem; /* Larger icons */
+  nav ul li {
+    width: 100%; /* Make links full-width for better tapping */
+    padding: 5px;
   }
 
-  nav strong {
-    font-size: 1.2rem; /* Larger heading text */
+  nav ul a {
+    width: 100%;
+    font-size: 1rem; /* Slightly smaller font for mobile */
   }
 
-  nav span {
-    font-size: 1rem; /* Larger secondary text */
+  nav ul a strong{
+    font-size: 0.8rem;
   }
 }

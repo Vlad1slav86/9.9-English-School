@@ -132,7 +132,7 @@ const About = () => {
         {aboutItems.map((item, index) => (
           <div key={index} className={`about-item item-${index + 1}`}>
             <div className="content">
-              <h5>{item.number}</h5>
+              {/* <h5>{item.number}</h5> */}
               {item.jpTitle && <h3>{item.jpTitle}</h3>}
               {item.jpDetail && <p>{item.jpDetail}</p>}
               <h4>{item.title}</h4>

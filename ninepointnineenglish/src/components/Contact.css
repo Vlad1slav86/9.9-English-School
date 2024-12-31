@@ -1,6 +1,7 @@
 #contact {
     padding: 20px;
-    background-color: #fff200;
+    /* background-color: #fff200; */
+    background-image: url(/public/images/background\ 9.svg);
     color: #005f87;
     line-height: 1.6;
   }
@@ -13,7 +14,7 @@
   
   h2 {
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: #0872a8;
     font-family: Arial black, Helvetica, sans-serif;
     margin-bottom: 60px;
@@ -96,7 +97,7 @@
       }
 
       .contact-container h2 {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
       }
       .contact-details, .business-hours, .school-info p{
 font-size: 1rem;

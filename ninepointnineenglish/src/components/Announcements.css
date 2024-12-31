@@ -1,14 +1,13 @@
 /* Base styles for mobile-first design */
 #announcements {
     padding: 20px;
-    background-color: #fff200;
-    background-repeat: no-repeat;
-    background-position: center; /* Center background image for small screens */
+    background-image: url(/public/images/background\ 9.svg);
+    background-size: cover;
   }
   
   #announcements h2 {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color: #0872a8;
     margin-bottom: 40px;
     font-family: Arial black, Helvetica, sans-serif;
@@ -91,9 +90,5 @@
     }
   }
   
-  @media (min-width: 1024px) {
-    #announcements {
-      background-position: 1330px; /* Move background image further right for extra-large screens */
-    }
-  }
+
   

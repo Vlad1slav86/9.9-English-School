@@ -1,7 +1,7 @@
 /* General container */
 #about {
   padding-top: 40px;
-  background-color: 	#fff200;
+  background-image: url(/public/images/background\ 9.svg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +12,7 @@
 #about h2 {
   text-align: center;
   margin-bottom: 60px;
-  font-size: 2.3rem;
+  font-size: 1.3rem;
   color: #0872a8;
   font-family: Arial black, Helvetica, sans-serif;
 }
@@ -27,13 +27,13 @@
 
 /* Base card styles */
 .about-item {
-  position: relative; /* Set relative position to anchor absolute elements inside */
+  /* position: relative; Set relative position to anchor absolute elements inside */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 22px;
+  border-radius: 8px;
   width: 250px;
   height: 300px;
   padding: 40px;
@@ -49,7 +49,7 @@
 
 /* Styling for the number */
 .about-item h5 {
-  position: absolute; /* Anchor relative to .about-item */
+  position: relative; /* Anchor relative to .about-item */
   top: -20px; /* Position slightly below the top */
   left: 50%;
   transform: translateX(-50%); /* Center horizontally */
@@ -89,7 +89,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 22px;
+  border-radius:8px;
   width: 270px; /* Larger card width */
   padding: 40px;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
@@ -129,6 +129,10 @@
     flex-direction: row;
     align-items: center;
     gap: 60px;
+  }
+
+  #about h2 {
+    font-size: 2rem;
   }
 
   .about-item:hover {
@@ -184,7 +188,7 @@
   #about h2 {
     text-align: center;
     margin-bottom: 60px;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color: #0872a8;
     font-family: Arial black, Helvetica, sans-serif;
   }

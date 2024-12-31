@@ -1,6 +1,7 @@
 #recruitment {
     padding: 20px;
-    background-color: #fff200;
+    background-image: url(/public/images/background\ 9.svg);
+    background-size: cover;
     color: #005f87;
     line-height: 1.6;
 }
@@ -11,8 +12,8 @@
     text-align: center;
 }
 
-h3 {
-    font-size: 1.8rem;
+.recruitment-line-qr-code h3 {
+    font-size: 2rem;
     color: #0872a8;
     font-family: Arial Black, Helvetica, sans-serif;
     margin-bottom: 20px;
@@ -28,9 +29,9 @@ h3 {
     text-align: center;
     margin: 20px auto;
     padding: 10px;
-    background-color: #fff200;
-    /* border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .line-qr-code h3 {
@@ -50,13 +51,15 @@ h3 {
 }
 
 @media (max-width: 430px) {
-    h3 {
-        font-size: 1.4rem;
+   .recruitment-line-qr-code h3 {
+        font-size: 1.3rem;
     }
 
-    p {
-        font-size: 1rem;
+    .recruitment-container p {
+        font-size: 1.2 rem;
     }
+
+
 
     .line-qr-code {
         padding: 15px;

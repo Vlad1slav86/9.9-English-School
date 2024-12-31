@@ -1,14 +1,14 @@
 /* Base styles for small screens */
 .calendar-section {
     padding: 10px;
-    background-color: #fff200;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 100%; /* Default to full width on small screens */
   }
   
   .calendar-container {
-    background-color: #fff200;
+    background-image: url(/public/images/background\ 9.svg);
+    background-size: cover;
     padding: 20px;
     text-align: center; /* Center content on smaller screens */
   }
@@ -21,7 +21,7 @@
   
   .calendar-container h2 {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     color: #0872a8;
     font-family: Arial black, Helvetica, sans-serif;
     margin-bottom: 30px;
@@ -46,7 +46,7 @@
     }
   
     .calendar-container h2 {
-      font-size: 2.3rem;
+      font-size: 2rem;
       margin-bottom: 60px;
     }
   }

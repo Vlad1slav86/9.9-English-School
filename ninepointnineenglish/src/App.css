@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* Align content to the top */
-  background-color: #fff200; /* Fallback color */
+  /* background-color: #fff200;  */
 }
 
 #main-section h1{
