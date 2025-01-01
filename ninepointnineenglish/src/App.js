@@ -37,7 +37,7 @@ const App = () => {
           element={
             <>
               <div className="main" id="main-section">
-                <h1>It's a bright choice!</h1>
+                
                 {/* <div id="message"><h2>Hi! I'm Paul, the president of 9.9.<br/> We now have over 300 students in more than 100 group and private classes.
                   <br/>
                   I am sure we will be able to match your child with the perfect class. <br/>Please give us a call or stop by.

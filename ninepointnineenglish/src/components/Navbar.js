@@ -1,23 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false); // Close the menu
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav>
+    <nav ref={menuRef}>
       {/* Hamburger Menu Button */}
       <button
-        className="nav-toggle"
+        className={`nav-toggle ${menuOpen ? 'open' : ''}`}
         onClick={toggleMenu}
         aria-label="Toggle navigation"
       >
-      
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
       {/* Navbar Links */}

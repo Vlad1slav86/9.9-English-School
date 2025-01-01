@@ -31,6 +31,8 @@
 
 .instructor-card {
   background-color: white;
+  /* border: 8px solid #fff200; */
+  border-top: 25px solid #fff200;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   display: flex;
