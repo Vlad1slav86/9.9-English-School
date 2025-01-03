@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/9.9-English-School/static/css/main.e52342f7.css",
+    "main.css": "/9.9-English-School/static/css/main.0d3d0475.css",
     "main.js": "/9.9-English-School/static/js/main.f64de1a1.js",
     "static/js/453.72a6eff1.chunk.js": "/9.9-English-School/static/js/453.72a6eff1.chunk.js",
     "static/media/Paul_2.jpeg": "/9.9-English-School/static/media/Paul_2.945b3c57fbff6a94e150.jpeg",
@@ -25,7 +25,7 @@
     "static/media/Paul_DSC02343.jpg": "/9.9-English-School/static/media/Paul_DSC02343.5b86639ba4625a65fd29.jpg",
     "static/media/Justin_erika71.jpg": "/9.9-English-School/static/media/Justin_erika71.b3b6dab0ea7a6124307d.jpg",
     "static/media/Justin_DSC02302.jpg": "/9.9-English-School/static/media/Justin_DSC02302.9ceba6506b1a752e376d.jpg",
-    "static/media/background 9.svg": "/9.9-English-School/static/media/background 9.50c41928e627e9c9bd61.svg",
+    "static/media/background 9.svg": "/9.9-English-School/static/media/background 9.c2a64f2ab4efe26e92a9.svg",
     "static/media/Justin_yuma_kimika_satsuki.jpg": "/9.9-English-School/static/media/Justin_yuma_kimika_satsuki.13e5852f3c76784ef500.jpg",
     "static/media/Justin_mao_momoka.jpg": "/9.9-English-School/static/media/Justin_mao_momoka.edb289f4eac724571de6.jpg",
     "static/media/Justin_Aoi_IMG_0844.jpg": "/9.9-English-School/static/media/Justin_Aoi_IMG_0844.b4919f82a460c6026e14.jpg",
@@ -35,12 +35,12 @@
     "static/media/student_reisuke.jpg": "/9.9-English-School/static/media/student_reisuke.39c15b80d11abd0cc4a6.jpg",
     "static/media/sutudent_aoi_DSC02296.jpg": "/9.9-English-School/static/media/sutudent_aoi_DSC02296.d06d6c98e384ba3c1c4d.jpg",
     "index.html": "/9.9-English-School/index.html",
-    "main.e52342f7.css.map": "/9.9-English-School/static/css/main.e52342f7.css.map",
+    "main.0d3d0475.css.map": "/9.9-English-School/static/css/main.0d3d0475.css.map",
     "main.f64de1a1.js.map": "/9.9-English-School/static/js/main.f64de1a1.js.map",
     "453.72a6eff1.chunk.js.map": "/9.9-English-School/static/js/453.72a6eff1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e52342f7.css",
+    "static/css/main.0d3d0475.css",
     "static/js/main.f64de1a1.js"
   ]
 }
