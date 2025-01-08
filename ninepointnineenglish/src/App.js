@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -37,13 +37,8 @@ const App = () => {
           element={
             <>
               <div className="main" id="main-section">
-                
-                {/* <div id="message"><h2>Hi! I'm Paul, the president of 9.9.<br/> We now have over 300 students in more than 100 group and private classes.
-                  <br/>
-                  I am sure we will be able to match your child with the perfect class. <br/>Please give us a call or stop by.
-                </h2>
-                </div> */}
-                </div> 
+                <div className="main-image"></div>
+              </div> 
               <Gallery id="gallery-section" /> 
             </>
           }

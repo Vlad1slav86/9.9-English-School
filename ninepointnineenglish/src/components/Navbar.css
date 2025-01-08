@@ -6,9 +6,11 @@ nav {
   padding: 0px 0; /* Add vertical padding */
 }
 
-.nav-toggle:hover {
-  background-color: #065a84; /* Darker blue on hover */
-}
+
+
+/* .nav-toggle:hover {
+  background-color: #065a84; 
+} */
 
 .nav-toggle::before,
 .nav-toggle::after {
@@ -16,7 +18,7 @@ nav {
   display: block;
   width: 20px;
   height: 2px;
-  background:white;
+  background: white;
   margin: 5px auto;
   transition: all 0.3s ease;
 }
@@ -63,6 +65,7 @@ nav ul a:hover {
   background-color: #065a84; /* Highlight link background */
   transform: translateY(-3px); /* Subtle lift effect */
   color: #fff200; /* Bright yellow text on hover */
+  text-decoration: underline;
 }
 
 nav ul li i {
@@ -91,7 +94,7 @@ nav ul a.active {
   }
 
   nav ul li {
-    margin: 0 -10px; /* Add horizontal spacing between links */
+    margin: 0 -5px; /* Add horizontal spacing between links */
   }
 
   nav ul a {
@@ -102,20 +105,35 @@ nav ul a.active {
     font-size: 1.2rem;
   }
 
+  nav ul li strong{
+    margin: 10px -2px;
+    color: white;
+  }
+
   nav ul a:hover {
     transform: translateY(-5px); /* More pronounced lift effect */
   }
 }
 
+/* @media (min-width:1064px) {
+  nav ul a strong {
+    font-size: 1.2rem;
+  }
+} */
+
 /* Small Screens */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-toggle {
     display: block; /* Show toggle button on smaller screens */
+    background-color: #065a84;
+    position: absolute;
+    z-index: 1000;
   }
 
   nav {
     position: absolute;
     border-bottom-right-radius: 8px;
+    z-index: 10;
   }
 
   nav ul {

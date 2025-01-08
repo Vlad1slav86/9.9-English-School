@@ -1,23 +1,33 @@
 /* Base Styles - Mobile First */
 
-/* Main Section */
 .main {
-  height: auto; /* Allow height to adjust based on content */
-  min-height: 40vh; /* Ensure it at least fills the viewport */
-  width: 100%; /* Full-width container */
-  margin: 0;
-  padding: 0;
-  /* border: 22px solid #fff200; */
-  background-image: url('/public/images/Paul_Main2.jpeg'); /* Background image */
-  background-size: contain; /* Ensure the entire image is visible */
-  background-repeat: no-repeat; /* Prevent repetition */
-  /* background-position: center top; Center horizontally, align to the top vertically */
+  position: relative; /* Ensure this is positioned for layering */
+  height: 40vh; /* Full screen height */
+  width: 100%; /* Full screen width */
+   /* Main background */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; /* Align content to the top */
-  /* background-color: #fff200;  */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden; /* Prevent overflow issues */
+  z-index: 1;
 }
+
+.main-image {
+  position: relative; /* Keep it in normal document flow */
+  z-index: 1; /* Ensure it's above the main container */
+  width: 60%; /* Allow space for background visibility */
+  /* max-width: 800px; Optional max width */
+  height: 100%; /* Stretch vertically */
+  background-image: url('/public/images/Paul_Main2.jpeg'); /* Image URL */
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure full image visibility */
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional styling */
+}
+
 
 #main-section h1{
   font-size: 1.5rem;
@@ -33,19 +43,6 @@
   color: #0872a8;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
-#message {
-  position: relative; /* Required for the pseudo-element */
-  width: 40vw;
-  margin: 100px auto; /* Center horizontally */
-  padding: 20px;
-  background-color: rgba(255, 242, 0, 0.9); /* Slightly transparent yellow */
-  border-radius: 8px;
-  color: #000; /* Text color */
-  z-index: 1; /* Ensure the text stays above the pseudo-element */
-  overflow: hidden; /* Clip any overflow from pseudo-elements */
-}
-
 
 /* Image Gallery Wrapper */
 .image-gallery-wrapper {
@@ -71,8 +68,8 @@
 
 /* General Styling for Images */
 .image-gallery img {
-  width: 220px; /* Images take full container width */
-  height: 150px; /* Maintain aspect ratio */
+  width: 45vw; /* Images take full container width */
+  height: 15vh; /* Maintain aspect ratio */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease; /* Smooth hover effect */
@@ -83,13 +80,59 @@
   transform: scale(1.2); /* Slight enlarge on hover */
 }
 
+
 /* Larger Screens */
-@media (min-width: 768px) {
+@media (min-width:389px) {
   .main {
-    height: 80vh; /* Adjust height for larger screens */
-    background-size:contain; /* Use cover for a more immersive look */
-    background-position: center; /* Center the image */
-    font-size: 30px; /* Larger font size for desktops */
+    height: 33vh;
+  }
+
+  .image-gallery img {
+    width: 40vw; /* Images take full container width */
+    height: 12vh; /* Maintain aspect ratio */
+}
+}
+
+@media (max-width: 766px) {
+  .main {
+    width: 100%; /* Use more width on smaller screens */
+    background-image: url('/public/images/Paul_Main2.jpeg');
+  }
+
+  .main-image {
+    display: none;
+  }
+}
+
+@media (min-width: 766px) {
+  .main {
+    height: 50vh;
+    width: 100%; /* Use more width on smaller screens */
+    background-image: url('/public/images/Paul_Main2.jpeg');
+  }
+
+  .main-image {
+    display: none;
+  }
+
+  .image-gallery img {
+    width: 35vw;
+    height: 15vh;
+}
+}
+
+
+@media (min-width: 1200px) {
+  .main {
+    height: 95vh; /* Adjust height for larger screens */
+    background-image: url('/public/images/background\ 9.svg');
+  }
+
+  .main-image {
+    display: block;
+    width: 80%; /* Keep the same width on larger screens */
+    height: 100%; /* Maintain full height */
+    background-image: url('/public/images/Paul_Main2.jpeg');
   }
 
 
@@ -99,11 +142,7 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
-  #message {
-    width: 30vw;
-    margin-top: 500px;
-    
-  }
+ 
   .image-gallery-wrapper {
     padding: 10px 0; /* Add more spacing */
     overflow: hidden; /* Enable hidden overflow */

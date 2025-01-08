@@ -2,6 +2,7 @@
     padding: 20px;
     /* background-color: #fff200; */
     background-image: url(/public/images/background\ 9.svg);
+    background-size: cover;
     color: #005f87;
     line-height: 1.6;
   }

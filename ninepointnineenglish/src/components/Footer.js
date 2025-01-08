@@ -18,7 +18,7 @@ const Footer = () => {
           <h3>お問い合わせ</h3>
           <p>📞 <strong><a href="tel:0236252299">023-625-2299</a></strong></p>
           <p>📧 <strong><a href="mailto:info@ninepointnineenglish.com">info@ninepointnineenglish.com</a></strong></p>
-          <p>メールでお問い合せの際は必ずお電話番号をお書き添え下さい。返信メールが届かない場合がございます。</p>
+          <p>メールでお問い合せの際は必ずお電話番号をお書き添え下さい。<br/>返信メールが届かない場合がございます。</p>
         </div>
 
         {/* QR Code Section */}

@@ -2,6 +2,7 @@
 #about {
   padding-top: 40px;
   background-image: url(/public/images/background\ 9.svg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;

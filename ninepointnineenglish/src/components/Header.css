@@ -34,29 +34,17 @@ header p {
   text-align: center; /* Center align text */
 }
 
-/* Navigation Styling */
-nav ul {
-  list-style: none; /* Remove bullet points */
-  display: flex; /* Horizontal navigation */
-  flex-wrap: wrap; /* Wrap on smaller screens */
-  gap: 10px; /* Add spacing */
-  padding: 0;
-  margin: 0;
-  justify-content: center; /* Center navigation */
+.nav-toggle::before,
+.nav-toggle::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: white;
+  margin: 5px auto;
+  transition: all 0.3s ease;
 }
 
-nav a {
-  text-decoration: none; /* Remove underline */
-  color: #333; /* Link color */
-  font-size: 1rem; /* Adjust font size */
-  padding: 5px 10px; /* Add spacing */
-}
-
-/* Hover Effect for Links */
-nav a:hover {
-  color: #0872a8; /* Change color on hover */
-  text-decoration: underline; /* Optional: Add underline on hover */
-}
 
 /* Larger Screens */
 @media (min-width: 768px) {
@@ -77,13 +65,5 @@ nav a:hover {
     padding: 0; /* Reset padding */
     left: 50%; /* Center align text */
     transform: translateX(-50%); /* Offset for alignment */
-  }
-
-  nav ul {
-    gap: 20px; /* Larger gap between navigation links */
-  }
-
-  nav a {
-    font-size: 1.2rem; /* Larger font size for links */
   }
 }
