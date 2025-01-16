@@ -62,12 +62,14 @@ const Contact = () => {
           </div>
 
           <div className="line-qr-code">
-            <h3>採用情報 (LINE)</h3>
-            <p>下記のQRコードをスキャンして、私たちとLINEでつながりましょう。</p>
-            <QRCodeCanvas value={lineAccountUrl} size={150} bgColor="#ffffff" fgColor="#000000" />
-            <p>または、<a href={lineAccountUrl} target="_blank" rel="noopener noreferrer">こちらをクリック</a>してLINEを開いてください。</p>
+  <h3>Recruitment Information (LINE)</h3>
+  <p>Scan the QR code below to connect with us on LINE.</p>
+  <QRCodeCanvas value={lineAccountUrl} size={150} bgColor="#ffffff" fgColor="#000000" />
+  <p>
+    Alternatively, <a href={lineAccountUrl} target="_blank" rel="noopener noreferrer">click here</a> to open LINE.
+  </p>
+</div>
 
-          </div>
         </div>
       </div>
     </section>

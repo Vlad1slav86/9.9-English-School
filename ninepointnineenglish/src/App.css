@@ -124,13 +124,13 @@
 
 @media (min-width: 1200px) {
   .main {
-    height: 95vh; /* Adjust height for larger screens */
+    height: 70vh; /* Adjust height for larger screens */
     background-image: url('/public/images/background\ 9.svg');
   }
 
   .main-image {
     display: block;
-    width: 80%; /* Keep the same width on larger screens */
+    width: 61%; /* Keep the same width on larger screens */
     height: 100%; /* Maintain full height */
     background-image: url('/public/images/Paul_Main2.jpeg');
   }

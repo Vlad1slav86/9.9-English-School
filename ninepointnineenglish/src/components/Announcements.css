@@ -37,6 +37,21 @@
     width: 100%; /* Take full width on mobile screens */
     max-width: 800px; /* Restrict card width */
   }
+
+  .image-container {
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    margin-bottom: 12px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .announcement-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #f0f0f0; /* Placeholder background */
+  }
   
   .announcement-card h3 {
     font-size: 1.5rem;

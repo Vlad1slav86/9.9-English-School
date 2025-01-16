@@ -1,5 +1,4 @@
 import React from 'react';
-import CalendarSection from './CalendarSection'; // Import the calendar component
 import './Announcements.css';
 
 const Announcements = () => {
@@ -27,32 +26,29 @@ const Announcements = () => {
       <div className="announcement-container">
         {announcements.map((announcement, index) => (
           <div key={index} className="announcement-card">
+            {/* Placeholder for the image */}
+            <div className="image-container">
+              <img src="" alt="Announcement" className="announcement-image" />
+            </div>
             <h3>{announcement.title}</h3>
             <p className="announcement-date">{announcement.date}</p>
             <p>{announcement.description}</p>
           </div>
         ))}
       </div>
+
       {/* Add the Calendar Section below the announcements */}
-      {/* <div className="calendar-section">
-        <CalendarSection />
-      </div> */}
-    
-    
       <div className="Calendar-container">
-            <iframe 
-              src="https://calendar.google.com/calendar/embed?src=59d85ae254cec09009955c24c9d4b09013bef6aa37aa0fe0bc22ccd2861db2f9%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-              width="840" 
-              height="450" 
-              style={{ border: 0 }} 
-              allowFullScreen="" 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-    
-    
-    
+        <iframe 
+          src="https://calendar.google.com/calendar/embed?src=59d85ae254cec09009955c24c9d4b09013bef6aa37aa0fe0bc22ccd2861db2f9%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+          width="840" 
+          height="450" 
+          style={{ border: 0 }} 
+          allowFullScreen="" 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </section>
   );
 };

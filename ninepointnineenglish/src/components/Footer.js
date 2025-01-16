@@ -23,11 +23,14 @@ const Footer = () => {
 
         {/* QR Code Section */}
         <div className="footer-qr-code">
-  <h3>採用情報 (LINE)</h3>
+  <h3>Recruitment Information (LINE)</h3>
   <QRCodeCanvas value={lineAccountUrl} size={150} bgColor="#ffffff" fgColor="#000000" />
-  <p>QRコードをスキャンしてLINEでつながりましょう！</p>
-  <p>または、<a href={lineAccountUrl} target="_blank" rel="noopener noreferrer"><i className="fa fa-link"></i> こちらをクリック</a>してLINEを開いてください。</p>
+  <p>Scan the QR code to connect with us on LINE!</p>
+  <p>
+    Alternatively, <a href={lineAccountUrl} target="_blank" rel="noopener noreferrer"><i className="fa fa-link"></i> click here</a> to open LINE.
+  </p>
 </div>
+
 
 
         {/* Navigation Links */}
