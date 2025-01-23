@@ -36,7 +36,8 @@ const Footer = () => {
         {/* Navigation Links */}
         <div className="footer-links">
   <Link to="/"><i className="fa fa-home"></i> ホーム</Link> {/* Home */}
-  <Link to="/about"><i className="fa fa-info-circle"></i> アバウト</Link> {/* About */}
+  <Link to="/about"><i className="fa fa-info-circle"></i> 特徴</Link> {/* About */}
+  <Link to="/pricing"><i className="fa fa-yen"></i> 料金</Link> {/* Pricing */}
   <Link to="/instructors"><i className="fa fa-users"></i> 講師紹介</Link> {/* Instructors */}
   <Link to="/announcements"><i className="fa fa-bullhorn"></i> お知らせ</Link> {/* Announcements */}
   <Link to="/calendar"><i className="fa fa-calendar"></i> カレンダー</Link> {/* Calendar */}

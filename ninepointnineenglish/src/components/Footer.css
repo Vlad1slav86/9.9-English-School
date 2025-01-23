@@ -1,6 +1,6 @@
 /* Footer Section */
 .footer {
-  background-color: #0872a8;
+  background-color: #336699;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -58,9 +58,9 @@
 }
 
 .footer-links a:hover {
-  background-color: #065a84; /* Highlight link background */
+  background-color: #274a73; /* Highlight link background */
   transform: translateY(-3px); /* Subtle lift effect */
-  color: #fff200; /* Bright yellow text on hover */
+  color: #ffdf02; /* Bright yellow text on hover */
   text-decoration: underline; /* Add underline on hover */
 }
 

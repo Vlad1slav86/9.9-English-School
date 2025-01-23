@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./Header.css";
-import logoImage from "../images/tl_eikaiwa.gif"; 
+import logoImage from "../images/HighRes_Logo.jpg"; 
 
 const Header = () => {
   return (

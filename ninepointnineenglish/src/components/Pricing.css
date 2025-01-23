@@ -1,0 +1,75 @@
+#pricing {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(/public/images/background\ 9.svg); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px 20px 50px;
+    min-height: 100vh; /* Ensure it fills the viewport */
+  }
+  
+  #pricing h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #336699;
+  }
+  
+  .tuition-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 25px solid #ffdf02;
+    border-radius: 8px;
+    width: 270px; /* Adjust width */
+    padding: 40px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+  }
+  
+  .tuition-card .content .column {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .tuition-card h4 {
+    color: #336699;
+    font-size: 1.2rem;
+  }
+  
+  .tuition-card p {
+    margin: 8px 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #336699;
+  }
+  
+  @media (min-width: 768px) {
+    .tuition-card {
+      width: 75%;
+      padding: 45px;
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    /* .tuition-card:hover {
+      transform: scale(1.1);
+    } */
+  
+    .tuition-card .content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .tuition-card .content .column {
+      width: 45%;
+    }
+  }
+  

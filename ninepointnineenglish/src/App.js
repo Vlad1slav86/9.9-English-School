@@ -3,6 +3,7 @@ import { HashRouter as Router, Routes, Route, useLocation } from "react-router-d
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import Pricing from "./components/Pricing.js";
 import Announcements from "./components/Announcements";
 import Footer from "./components/Footer";
 import CalendarSection from "./components/CalendarSection";
@@ -45,6 +46,7 @@ const App = () => {
         />
         {/* Other Routes */}
         <Route path="/about" element={<About />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/instructors" element={<Instructors />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/announcements" element={<Announcements />} />

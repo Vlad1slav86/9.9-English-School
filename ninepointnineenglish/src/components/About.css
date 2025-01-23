@@ -8,13 +8,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 #about h2 {
   text-align: center;
   margin-bottom: 60px;
   font-size: 1.3rem;
-  color: #0872a8;
+  color: #336699;
   font-family: Arial black, Helvetica, sans-serif;
 }
 
@@ -28,14 +29,12 @@
 
 /* Base card styles */
 .about-item {
-  /* position: relative; Set relative position to anchor absolute elements inside */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* border: 8px solid #fff200; */
-  border-top: 25px solid #fff200;
+  border-top: 25px solid #ffdf02;
   border-radius: 8px;
   width: 250px;
   height: 300px;
@@ -46,17 +45,13 @@
   overflow: hidden; /* Prevent text overflow */
 }
 
-/* .about-item:hover {
-  transform: scale(1.5); 
-} */
-
 /* Styling for the number */
 .about-item h5 {
-  position: relative; /* Anchor relative to .about-item */
-  top: -20px; /* Position slightly below the top */
+  position: relative;
+  top: -20px;
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-  background-color: #0872a8;
+  transform: translateX(-50%);
+  background-color: #336699;
   color: #fff;
   border-radius: 50%;
   width: 40px;
@@ -67,67 +62,24 @@
   font-size: 1.2rem;
   font-weight: bold;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 2; /* Ensure it appears above other content */
+  z-index: 2;
 }
 
 /* Style for text inside the cards */
 .about-item .content h3,
 .about-item .content h4,
 .about-item .content p {
-  font-size: 1rem; /* Adjust text size to fit */
-  margin: 0 5px; /* Manage margins dynamically */
+  font-size: 1rem;
+  margin: 0 5px;
   margin-bottom: 10px;
-  line-height: 1.2; /* Space text nicely */
-  overflow-wrap: break-word; /* Break long words */
+  line-height: 1.2;
+  overflow-wrap: break-word;
   word-break: break-word;
   text-align: center;
-  color: #0872a8;
+  color: #336699;
 }
 
-/* Tuition Fees Card */
-.tuition-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  /* border: 8px solid #fff200; */
-  border-top: 25px solid #fff200;
-  border-radius:8px;
-  width: 270px; /* Larger card width */
-  padding: 40px;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-  background: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.tuition-card .content .column {
-  width: 100%; /* Stack the columns on smaller screens */
-  text-align: center;
-}
-
-.tuition-card h3, .tuition-card h4 {
-  color: #0872a8;
-  font-size: 1.2rem;
-}
-
-.tuition-card p {
-  margin: 8px 0;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #0872a8;
-}
-
-
-
-
-.tuition-card .content .column p {
-  margin: 8px 0;
-}
-
-/* Responsive adjustments for tuition card */
+/* Responsive adjustments */
 @media (min-width: 768px) {
   .sets-apart-inner {
     display: flex;
@@ -141,52 +93,26 @@
   }
 
   .about-item:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
   }
-  
+
   .about-item {
     width: 360px;
     height: 360px;
   }
 
   .about-item h5 {
-    width: 50px; /* Scale down number circle */
+    width: 50px;
     height: 50px;
-    font-size: 1.5rem; /* Adjust font size */
+    font-size: 1.5rem;
     margin-top: 50px;
   }
 
   .about-item .content h3,
   .about-item .content h4,
   .about-item .content p {
-    font-size: 1rem; /* Dynamically scale down text on smaller devices */
+    font-size: 1rem;
   }
-
-  /* Adjust tuition card for smaller screens */
-  .tuition-card {
-    width: 75%;
-    padding: 45px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .tuition-card:hover {
-    transform: scale(1.1); 
-  }
-
-  .tuition-card .content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-
-  .tuition-card .content .column {
-    width: 45%; /* Each column takes up 45% of the width */
-    text-align: center;
-  }
-
 }
 
 @media (max-width: 430px) {
@@ -197,8 +123,8 @@
     color: #0872a8;
     font-family: Arial black, Helvetica, sans-serif;
   }
+
   .about-item {
     padding: 50px;
   }
-
 }

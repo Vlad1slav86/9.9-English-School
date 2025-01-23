@@ -5,6 +5,7 @@
   height: 40vh; /* Full screen height */
   width: 100%; /* Full screen width */
    /* Main background */
+  background-image: url('/public/images/background\ 9.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,7 +22,7 @@
   width: 60%; /* Allow space for background visibility */
   /* max-width: 800px; Optional max width */
   height: 100%; /* Stretch vertically */
-  background-image: url('/public/images/Paul_Main2.jpeg'); /* Image URL */
+  background-image: url('/public/images/Paul_Main2.jpeg'); 
   background-repeat: no-repeat;
   background-size: cover; /* Ensure full image visibility */
   background-position: center;
@@ -124,15 +125,18 @@
 
 @media (min-width: 1200px) {
   .main {
-    height: 70vh; /* Adjust height for larger screens */
+    height: 75vh; /* Adjust height for larger screens */
     background-image: url('/public/images/background\ 9.svg');
+    background-size: contain;
+    background-repeat:space;
+    width: 100%;
   }
 
   .main-image {
     display: block;
     width: 61%; /* Keep the same width on larger screens */
     height: 100%; /* Maintain full height */
-    background-image: url('/public/images/Paul_Main2.jpeg');
+    
   }
 
 

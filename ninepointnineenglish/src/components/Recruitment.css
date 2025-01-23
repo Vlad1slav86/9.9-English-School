@@ -14,7 +14,7 @@
 
 .recruitment-line-qr-code h3 {
     font-size: 2rem;
-    color: #0872a8;
+    color: #336699;
     font-family: Arial Black, Helvetica, sans-serif;
     margin-bottom: 20px;
 }
@@ -22,7 +22,7 @@
 .recruitment-container p {
     margin: 10px 20px;
     font-size: 1.2rem;
-    color: #005f87;
+    color: #336699;
 }
 
 .recruitment-line-qr-code {
@@ -30,19 +30,19 @@
     margin: 20px auto;
     padding: 10px;
     background-color: white;
-    border-top: 25px solid #fff200;
+    border-top: 25px solid #ffdf02;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .line-qr-code h3 {
     font-size: 1.5rem;
-    color: #0872a8;
+    color: #336699;
     margin-bottom: 15px;
 }
 
 .line-qr-code a {
-    color: #0872a8;
+    color: #336699;
     font-weight: bold;
     text-decoration: underline;
 }

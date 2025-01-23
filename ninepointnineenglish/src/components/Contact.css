@@ -16,7 +16,7 @@
   h2 {
     text-align: center;
     font-size: 2rem;
-    color: #0872a8;
+    color: #336699;
     font-family: Arial black, Helvetica, sans-serif;
     margin-bottom: 60px;
   }
@@ -28,7 +28,7 @@
   h3 {
     margin-top: 20px;
     font-size: 1.5rem;
-    color: #0872a8;
+    color: #336699;
   }
   
   p {
@@ -39,13 +39,13 @@
     margin-bottom: 20px;
     padding: 10px;
     background-color: white;
-    border-top: 25px solid #fff200;
+    border-top: 25px solid #ffdf02;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   strong {
-    color: #0872a8;
+    color: #336699;
     font-size: 1rem;
   }
   
@@ -72,19 +72,19 @@
     margin-bottom: 20px;
     padding: 10px;
     background-color: white;
-    border-top: 25px solid #fff200;
+    border-top: 25px solid #ffdf02;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .line-qr-code h3 {
     font-size: 1.5rem;
-    color: #0872a8;
+    color: #336699;
     margin-bottom: 10px;
 }
 
 .line-qr-code a {
-    color: #0872a8;
+    color: #336699;
     text-decoration: underline;
 }
 
@@ -92,11 +92,68 @@
     color: #005f87;
 }
 
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content iframe {
+  border-radius: 8px;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: whitesmoke;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  color: #336699;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #274a73;
+}
+
+.clickable-address {
+  color: #336699;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.clickable-address:hover {
+  color: #005f87;
+}
+
+
 @media (max-width: 430px) {
     h3 {
         margin-top: 10px;
         font-size: 1.2rem;
-        color: #0872a8;
+        color: #336699;
       }
 
       .contact-container h2 {

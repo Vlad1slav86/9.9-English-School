@@ -48,9 +48,16 @@ const Navbar = () => {
         <li>
           <Link to="/about" onClick={() => setMenuOpen(false)}>
             <i className="fa fa-info-circle"></i>
-            <strong>アバウト</strong>
+            <strong>特徴</strong>
           </Link>
         </li>
+        <li>
+          <Link to="/pricing" onClick={() => setMenuOpen(false)}>
+            <i className="fa fa-yen"></i>
+            <strong>料金</strong>
+          </Link>
+        </li>
+
         <li>
           <Link to="/instructors" onClick={() => setMenuOpen(false)}>
             <i className="fa fa-users"></i>

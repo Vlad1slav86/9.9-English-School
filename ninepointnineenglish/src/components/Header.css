@@ -7,7 +7,7 @@ header {
   justify-content: center; /* Center elements for mobile */
   align-items: center; /* Align items vertically */
   padding: 10px;
-  background-color: whitesmoke; /* Background color */
+  background-color: white; /* Background color */
   position: relative; /* Enable absolute positioning for inner elements */
   gap: 10px; /* Add space between elements for smaller screens */
 }
