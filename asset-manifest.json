@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/9.9-English-School/static/css/main.d86c1b30.css",
-    "main.js": "/9.9-English-School/static/js/main.de4493a2.js",
+    "main.css": "/9.9-English-School/static/css/main.72b34ead.css",
+    "main.js": "/9.9-English-School/static/js/main.e55d59cb.js",
     "static/js/453.72a6eff1.chunk.js": "/9.9-English-School/static/js/453.72a6eff1.chunk.js",
     "static/media/Paul_2.jpeg": "/9.9-English-School/static/media/Paul_2.945b3c57fbff6a94e150.jpeg",
     "static/media/Justin_2.jpeg": "/9.9-English-School/static/media/Justin_2.d3c09114df2a36428526.jpeg",
@@ -36,12 +36,12 @@
     "static/media/student_reisuke.jpg": "/9.9-English-School/static/media/student_reisuke.39c15b80d11abd0cc4a6.jpg",
     "static/media/sutudent_aoi_DSC02296.jpg": "/9.9-English-School/static/media/sutudent_aoi_DSC02296.d06d6c98e384ba3c1c4d.jpg",
     "index.html": "/9.9-English-School/index.html",
-    "main.d86c1b30.css.map": "/9.9-English-School/static/css/main.d86c1b30.css.map",
-    "main.de4493a2.js.map": "/9.9-English-School/static/js/main.de4493a2.js.map",
+    "main.72b34ead.css.map": "/9.9-English-School/static/css/main.72b34ead.css.map",
+    "main.e55d59cb.js.map": "/9.9-English-School/static/js/main.e55d59cb.js.map",
     "453.72a6eff1.chunk.js.map": "/9.9-English-School/static/js/453.72a6eff1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d86c1b30.css",
-    "static/js/main.de4493a2.js"
+    "static/css/main.72b34ead.css",
+    "static/js/main.e55d59cb.js"
   ]
 }
